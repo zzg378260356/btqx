@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+  frontend:
+    image: node:22-bookworm-slim
+    environment:
+      API_PROXY_TARGET: http://backend:8000
+    working_dir: /app
+    command: sh -c "npm ci && npm run dev -- --port 5173"
+    ports:
+      - "127.0.0.1:5173:5173"
+    volumes:
+      - ./frontend:/app
+      - frontend_modules:/app/node_modules
+    restart: unless-stopped
+volumes:
+  frontend_modules:
