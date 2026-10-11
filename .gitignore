@@ -9,3 +9,4 @@ frontend/*.tsbuildinfo
 **/*.sqlite-*
 /playwright-report/
 /test-results/
+.idea
