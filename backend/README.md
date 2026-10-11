@@ -13,6 +13,12 @@ docker compose exec backend php artisan btqx:create-admin admin@example.com
 
 管理员使用用户名登录，默认超级管理员用户名为 `admin`。密码通过隐藏提示输入，至少 12 位。不会初始化固定密码。开发、测试和正式环境统一使用 Docker PostgreSQL/PostGIS 与 Redis，演示数据仅在 local/testing 环境生成，重复初始化不会重复插入。
 
+如果需要设置或重置管理员密码：
+
+```bash
+docker compose exec backend php artisan btqx:set-password admin
+```
+
 - 大屏：http://localhost:5173
 - 管理后台：http://localhost:5173/admin
 - 数据接口：http://localhost:8000/api/dashboard

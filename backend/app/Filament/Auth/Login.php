@@ -2,10 +2,9 @@
 
 namespace App\Filament\Auth;
 
-use Filament\Schemas\Components\Component;
 use Filament\Auth\Pages\Login as BaseLogin;
-use Illuminate\Support\HtmlString;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
 
 class Login extends BaseLogin
 {
