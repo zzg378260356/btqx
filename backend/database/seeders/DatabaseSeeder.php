@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Device;
+use App\Models\User;
 use App\Models\WeatherWarning;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +14,7 @@ class DatabaseSeeder extends Seeder
         if (! app()->environment(['local', 'testing'])) {
             return;
         }
+        User::firstOrCreate(['email' => 'admin@btqx.local'], ['name' => 'admin', 'password' => fake()->password(16), 'is_admin' => true, 'role' => 'super_admin']);
         $districts = ['东河区', '昆都仑区', '青山区', '白云鄂博矿区', '达尔罕茂明安联合旗'];
         for ($i = 0; $i < 24; $i++) {
             Device::firstOrCreate(['code' => sprintf('BTQX-%04d', $i + 1)], ['name' => $districts[$i % 5].'监测站 '.($i + 1), 'type' => ['自动气象站', '雨量计', '风速仪'][$i % 3], 'district' => $districts[$i % 5], 'latitude' => 40.65 + $i * .001, 'longitude' => 109.83 + $i * .001, 'status' => $i % 7 === 0 ? 'offline' : 'online', 'last_seen_at' => now()->subMinutes($i % 7 === 0 ? 120 : 2)]);

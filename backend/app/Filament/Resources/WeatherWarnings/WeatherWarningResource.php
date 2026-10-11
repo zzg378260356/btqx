@@ -26,6 +26,16 @@ class WeatherWarningResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'title';
 
+    public static function canViewAny(): bool
+    {
+        return auth()->user()?->hasPermission('warnings.view') ?? false;
+    }
+
+    public static function canCreate(): bool
+    {
+        return auth()->user()?->hasPermission('warnings.manage') ?? false;
+    }
+
     public static function form(Schema $schema): Schema
     {
         return WeatherWarningForm::configure($schema);

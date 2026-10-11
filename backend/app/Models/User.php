@@ -12,13 +12,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-#[Fillable(['name', 'email', 'password'])]
+#[Fillable(['name', 'email', 'password', 'role'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable implements FilamentUser
 {
     public function canAccessPanel(Panel $panel): bool
     {
-        return (bool) $this->is_admin;
+        return $this->role !== 'disabled';
     }
 
     /** @use HasFactory<UserFactory> */
@@ -34,7 +34,18 @@ class User extends Authenticatable implements FilamentUser
         return [
             'email_verified_at' => 'datetime',
             'is_admin' => 'boolean',
+            'role' => 'string',
             'password' => 'hashed',
         ];
+    }
+
+    public function isSuperAdmin(): bool
+    {
+        return $this->role === 'super_admin';
+    }
+
+    public function hasPermission(string $permission): bool
+    {
+        return $this->isSuperAdmin() || in_array($permission, config("permissions.roles.{$this->role}", []), true);
     }
 }
