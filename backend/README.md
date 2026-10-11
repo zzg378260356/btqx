@@ -11,7 +11,7 @@ Laravel 13 + Filament 5 管理后台，Vue 3 + TypeScript + ECharts + Cesium 综
 docker compose exec backend php artisan btqx:create-admin admin@example.com
 ```
 
-管理员密码通过隐藏提示输入，至少 12 位。不会初始化固定密码。首次运行使用 SQLite，演示数据仅在 local/testing 环境生成，重复初始化不会重复插入。
+管理员使用用户名登录，默认超级管理员用户名为 `admin`。密码通过隐藏提示输入，至少 12 位。不会初始化固定密码。开发、测试和正式环境统一使用 Docker PostgreSQL/PostGIS 与 Redis，演示数据仅在 local/testing 环境生成，重复初始化不会重复插入。
 
 - 大屏：http://localhost:5173
 - 管理后台：http://localhost:5173/admin
@@ -62,8 +62,8 @@ cd ../backend && php artisan test --compact
 
 或者 `docker compose exec backend php artisan test --compact`。测试覆盖数据统计、后台访问控制、设备创建/坐标校验和预警创建到大屏的联动。
 
-## 后续数据库与部署
+## 数据库与部署
 
-后端已保留 Laravel PostgreSQL 配置，Docker 镜像安装了 `pdo_pgsql`。切换时配置 `.env` 的 `DB_CONNECTION=pgsql` 和连接参数，再执行迁移；PostGIS、Redis、Reverb 与设备通信均未在本次初始化中启用。
+Compose 已包含 PostgreSQL/PostGIS 和 Redis，后端使用 `DB_CONNECTION=pgsql`、Redis 缓存/队列；数据卷分别为 `postgres_data` 和 `redis_data`。正式部署时替换数据库密码并保留卷，执行迁移即可。PostGIS 空间字段、Reverb 与设备通信接口仍需按现场数据接入。
 
 生产大屏执行 `npm run build` 后部署 `frontend/dist/`；反向代理 `/api`、`/admin`、`/livewire`、`/css/filament`、`/js/filament`、`/fonts/filament` 到 Laravel。Laravel 公共根目录必须为 `backend/public`。Cesium 静态资源随构建复制至 `/cesium`。
