@@ -25,6 +25,7 @@ class CreateAdmin extends Command
         $user = new User;
         $user->name = $this->option('name');
         $user->email = $data['email'];
+        $user->username = $this->option('name');
         $user->password = $password;
         $user->is_admin = true;
         $user->role = 'super_admin';

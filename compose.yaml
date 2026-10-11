@@ -5,8 +5,33 @@ services:
       dockerfile: docker/Dockerfile
     ports:
       - "127.0.0.1:8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
     volumes:
       - ./backend:/app
+    restart: unless-stopped
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: btqx
+      POSTGRES_USER: btqx
+      POSTGRES_PASSWORD: btqx_dev_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U btqx -d btqx"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
     restart: unless-stopped
   frontend:
     image: node:22-bookworm-slim
@@ -22,3 +47,5 @@ services:
     restart: unless-stopped
 volumes:
   frontend_modules:
+  postgres_data:
+  redis_data:
