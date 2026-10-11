@@ -33,7 +33,7 @@ class DashboardTest extends TestCase
     public function test_admin_can_create_a_device_and_validation_rejects_invalid_coordinates(): void
     {
         $user = User::factory()->create();
-        $user->forceFill(['is_admin' => true])->save();
+        $user->forceFill(['is_admin' => true, 'role' => 'super_admin'])->save();
         $this->actingAs($user);
         Livewire::test(CreateDevice::class)->fillForm(['name' => '测试设备', 'code' => 'BT-TEST', 'type' => '雨量计', 'district' => '东河区', 'latitude' => 40.65, 'longitude' => 109.83, 'status' => 'online'])->call('create')->assertHasNoFormErrors();
         $this->assertDatabaseHas('devices', ['code' => 'BT-TEST']);
@@ -43,7 +43,7 @@ class DashboardTest extends TestCase
     public function test_admin_warning_creation_appears_in_dashboard(): void
     {
         $user = User::factory()->create();
-        $user->forceFill(['is_admin' => true])->save();
+        $user->forceFill(['is_admin' => true, 'role' => 'super_admin'])->save();
         $this->actingAs($user);
         Livewire::test(CreateWeatherWarning::class)->fillForm(['title' => '测试暴雨预警', 'level' => 'orange', 'type' => '暴雨', 'district' => '东河区', 'status' => '处置中', 'published_at' => now()->format('Y-m-d H:i:s'), 'responsible_unit' => '气象局'])->call('create')->assertHasNoFormErrors();
         $this->getJson('/api/dashboard')->assertJsonPath('counts.orange', 1)->assertJsonPath('warnings.0.title', '测试暴雨预警');
