@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Filament\Auth\Login;
 use App\Filament\Resources\Devices\Pages\CreateDevice;
 use App\Filament\Resources\WeatherWarnings\Pages\CreateWeatherWarning;
 use App\Models\Device;
@@ -47,5 +48,12 @@ class DashboardTest extends TestCase
         $this->actingAs($user);
         Livewire::test(CreateWeatherWarning::class)->fillForm(['title' => '测试暴雨预警', 'level' => 'orange', 'type' => '暴雨', 'district' => '东河区', 'status' => '处置中', 'published_at' => now()->format('Y-m-d H:i:s'), 'responsible_unit' => '气象局'])->call('create')->assertHasNoFormErrors();
         $this->getJson('/api/dashboard')->assertJsonPath('counts.orange', 1)->assertJsonPath('warnings.0.title', '测试暴雨预警');
+    }
+
+    public function test_admin_can_authenticate_with_username(): void
+    {
+        $user = User::factory()->create(['username' => 'login-admin', 'role' => 'super_admin', 'is_admin' => true, 'password' => 'AdminPass123456']);
+        Livewire::test(Login::class)->fillForm(['username' => 'login-admin', 'password' => 'AdminPass123456'])->call('authenticate');
+        $this->assertAuthenticatedAs($user);
     }
 }
