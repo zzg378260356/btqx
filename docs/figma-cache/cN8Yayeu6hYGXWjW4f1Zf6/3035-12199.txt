@@ -1,0 +1,331 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/dff8725f-7325-4351-8566-5bdfcf294cb4";
+const imgBg = `${assetPathPrefix}/0ad4a.svg`;
+const img = `${assetPathPrefix}/c96b4.svg`;
+const imgUnion = `${assetPathPrefix}/fec21.svg`;
+const imgUnion1 = `${assetPathPrefix}/4916d.svg`;
+const imgUnion2 = `${assetPathPrefix}/d0b07.svg`;
+const imgUnion3 = `${assetPathPrefix}/7e822.svg`;
+const img1 = `${assetPathPrefix}/a6f48.svg`;
+const img2 = `${assetPathPrefix}/32473.svg`;
+const img3 = `${assetPathPrefix}/bdc69.svg`;
+
+export default function Component() {
+  return (
+    <div className="contents relative size-full" data-node-id="3035:12199" data-name="数据模块">
+      <div className="absolute h-[42px] left-[calc(79.17%-10px)] top-[72px] w-[361px]" data-node-id="3035:12200" data-name="一级标题样式-03-h209">
+        <div className="absolute inset-[7.14%_0.01%_2.38%_0.01%]" data-node-id="I3035:12200;367:3313" data-name="bg">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBg} />
+        </div>
+        <div className="absolute inset-[97.62%_0.01%_2.38%_0.23%]" data-node-id="I3035:12200;367:3314" data-name="线">
+          <div className="absolute inset-[-0.5px_0]">
+            <img alt="" className="block max-w-none size-full" src={img} />
+          </div>
+        </div>
+        <div className="absolute bottom-px h-[18.034px] right-[0.03px] w-[44px]" data-node-id="I3035:12200;367:3315" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+        </div>
+        <div className="absolute bottom-px h-[1.023px] right-[10.09px] w-[33.944px]" data-node-id="I3035:12200;367:3316" data-name="Union">
+          <div className="absolute inset-[-293.37%_-5.89%_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgUnion1} />
+          </div>
+        </div>
+        <div className="absolute bottom-[3.77px] h-[22.113px] left-[10.6px] w-[10.992px]" data-node-id="I3035:12200;367:3317" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion2} />
+        </div>
+        <div className="absolute bottom-px h-[38px] left-[-0.01px] w-[16.691px]" data-node-id="I3035:12200;367:3318" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion3} />
+        </div>
+        <div className="absolute bottom-[-2.43px] flex h-[44.864px] items-center justify-center left-[-7.91px] mix-blend-plus-lighter w-[37.927px]" data-node-id="I3035:12200;367:3319">
+          <div className="-scale-y-100 flex-none rotate-[20.68deg]">
+            <div className="h-[38.077px] relative w-[26.164px]" data-name="发光">
+              <div className="absolute inset-[-15.76%_-22.93%]">
+                <img alt="" className="block max-w-none size-full" src={img1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 absolute flex h-[32.336px] items-center justify-center left-[21.18px] top-[calc(50%+0.12px)] w-[81.507px]" data-node-id="I3035:12200;367:3320">
+          <div className="-skew-x-18 flex-none scale-y-95">
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:75_SemiBold'] justify-center leading-[0] not-italic relative text-[24px] text-shadow-[0px_3px_10px_rgba(0,0,0,0.5),0px_0px_6px_#0084ff] text-white whitespace-nowrap">
+              <p className="leading-[normal]">设备监测状态</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[42px] left-[calc(79.17%+7px)] top-[calc(33.33%+17px)] w-[361px]" data-node-id="3035:12369" data-name="一级标题样式-03-h209">
+        <div className="absolute inset-[7.14%_0.01%_2.38%_0.01%]" data-node-id="I3035:12369;367:3313" data-name="bg">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBg} />
+        </div>
+        <div className="absolute inset-[97.62%_0.01%_2.38%_0.23%]" data-node-id="I3035:12369;367:3314" data-name="线">
+          <div className="absolute inset-[-0.5px_0]">
+            <img alt="" className="block max-w-none size-full" src={img} />
+          </div>
+        </div>
+        <div className="absolute bottom-px h-[18.034px] right-[0.03px] w-[44px]" data-node-id="I3035:12369;367:3315" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+        </div>
+        <div className="absolute bottom-px h-[1.023px] right-[10.09px] w-[33.944px]" data-node-id="I3035:12369;367:3316" data-name="Union">
+          <div className="absolute inset-[-293.37%_-5.89%_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgUnion1} />
+          </div>
+        </div>
+        <div className="absolute bottom-[3.77px] h-[22.113px] left-[10.6px] w-[10.992px]" data-node-id="I3035:12369;367:3317" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion2} />
+        </div>
+        <div className="absolute bottom-px h-[38px] left-[-0.01px] w-[16.691px]" data-node-id="I3035:12369;367:3318" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion3} />
+        </div>
+        <div className="absolute bottom-[-2.43px] flex h-[44.864px] items-center justify-center left-[-7.91px] mix-blend-plus-lighter w-[37.927px]" data-node-id="I3035:12369;367:3319">
+          <div className="-scale-y-100 flex-none rotate-[20.68deg]">
+            <div className="h-[38.077px] relative w-[26.164px]" data-name="发光">
+              <div className="absolute inset-[-15.76%_-22.93%]">
+                <img alt="" className="block max-w-none size-full" src={img1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 absolute flex h-[32.336px] items-center justify-center left-[21.18px] top-[calc(50%+0.12px)] w-[81.507px]" data-node-id="I3035:12369;367:3320">
+          <div className="-skew-x-18 flex-none scale-y-95">
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:75_SemiBold'] justify-center leading-[0] not-italic relative text-[24px] text-shadow-[0px_3px_10px_rgba(0,0,0,0.5),0px_0px_6px_#0084ff] text-white whitespace-nowrap">
+              <p className="leading-[normal]">实时预警事件</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute h-[42px] left-[calc(79.17%+7px)] top-[calc(58.33%+18.5px)] w-[361px]" data-node-id="3035:12435" data-name="一级标题样式-03-h209">
+        <div className="absolute inset-[7.14%_0.01%_2.38%_0.01%]" data-node-id="I3035:12435;367:3313" data-name="bg">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBg} />
+        </div>
+        <div className="absolute inset-[97.62%_0.01%_2.38%_0.23%]" data-node-id="I3035:12435;367:3314" data-name="线">
+          <div className="absolute inset-[-0.5px_0]">
+            <img alt="" className="block max-w-none size-full" src={img} />
+          </div>
+        </div>
+        <div className="absolute bottom-px h-[18.034px] right-[0.03px] w-[44px]" data-node-id="I3035:12435;367:3315" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+        </div>
+        <div className="absolute bottom-px h-[1.023px] right-[10.09px] w-[33.944px]" data-node-id="I3035:12435;367:3316" data-name="Union">
+          <div className="absolute inset-[-293.37%_-5.89%_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgUnion1} />
+          </div>
+        </div>
+        <div className="absolute bottom-[3.77px] h-[22.113px] left-[10.6px] w-[10.992px]" data-node-id="I3035:12435;367:3317" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion2} />
+        </div>
+        <div className="absolute bottom-px h-[38px] left-[-0.01px] w-[16.691px]" data-node-id="I3035:12435;367:3318" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion3} />
+        </div>
+        <div className="absolute bottom-[-2.43px] flex h-[44.864px] items-center justify-center left-[-7.91px] mix-blend-plus-lighter w-[37.927px]" data-node-id="I3035:12435;367:3319">
+          <div className="-scale-y-100 flex-none rotate-[20.68deg]">
+            <div className="h-[38.077px] relative w-[26.164px]" data-name="发光">
+              <div className="absolute inset-[-15.76%_-22.93%]">
+                <img alt="" className="block max-w-none size-full" src={img1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 absolute flex h-[32.336px] items-center justify-center left-[21.18px] top-[calc(50%+0.12px)] w-[81.507px]" data-node-id="I3035:12435;367:3320">
+          <div className="-skew-x-18 flex-none scale-y-95">
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:75_SemiBold'] justify-center leading-[0] not-italic relative text-[24px] text-shadow-[0px_3px_10px_rgba(0,0,0,0.5),0px_0px_6px_#0084ff] text-white whitespace-nowrap">
+              <p className="leading-[normal]">应急资源</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute contents left-[calc(89.58%+9px)] top-[calc(8.33%+44.5px)]" data-node-id="3035:12201">
+        <div className="absolute bg-gradient-to-r border border-[rgba(67,183,255,0.5)] border-solid content-stretch flex flex-col from-[rgba(67,183,255,0.1)] h-[95.86px] items-start justify-center left-[calc(79.17%+18px)] px-[12px] rounded-[3px] to-[rgba(0,157,255,0)] top-[calc(8.33%+44.5px)] w-[154px]" data-node-id="3035:12202">
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="3035:12203">
+            <div className="bg-gradient-to-r col-1 content-stretch flex from-[rgba(0,157,255,0.1)] gap-[4px] h-[31px] items-center ml-0 mt-0 px-[4px] relative row-1 to-[rgba(0,157,255,0)] w-[122px]" data-node-id="3035:12204">
+              <div className="border border-[#4b7bb5] border-solid content-stretch flex items-center justify-center overflow-clip p-[4px] relative rounded-[6px] shrink-0 size-[22px]" data-node-id="3035:12206">
+                <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[6px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(1.0016e-15 0.77923 1.5972 7.1421e-15 11 -0.48933)'><stop stop-color='rgba(109,216,255,1)' offset='0'/><stop stop-color='rgba(82,178,222,0.75)' offset='0.25'/><stop stop-color='rgba(55,140,188,0.5)' offset='0.5'/><stop stop-color='rgba(0,63,122,0)' offset='1'/></radialGradient></defs></svg>\"), linear-gradient(180deg, rgba(0, 38, 76, 0.3) 0%, rgba(3, 50, 96, 0.3) 100%)" }} />
+                <div className="relative shrink-0 size-[22px]" data-node-id="3035:12207" data-name="能源_蒸汽">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+                </div>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_7px_0px_#00133c]" />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#b5e3ff] text-[16px] whitespace-nowrap" data-node-id="3035:12208">
+                <p className="leading-[12px]">短信</p>
+              </div>
+            </div>
+            <div className="col-1 content-stretch flex items-center ml-0 mt-[39px] relative row-1" data-node-id="3035:12209">
+              <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12210">
+                <p>
+                  <span className="leading-[18px] text-[20px]">26,830</span>
+                  <span className="leading-[18px] text-[12px]">条</span>
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center ml-0 mt-[65px] not-italic relative row-1 text-[12px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12211">
+              <p className="leading-[18px]">成功率 98.6%</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute content-stretch flex flex-col h-[95.86px] items-start justify-center left-[calc(87.5%-24px)] px-[12px] rounded-[3px] top-[calc(8.33%+44.5px)] w-[154px]" data-node-id="3035:12212">
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="3035:12213">
+            <div className="bg-gradient-to-r col-1 content-stretch flex from-[rgba(0,157,255,0.1)] gap-[4px] h-[31px] items-center ml-0 mt-0 px-[4px] relative row-1 to-[rgba(0,157,255,0)] w-[122px]" data-node-id="3035:12214">
+              <div className="border border-[#4b7bb5] border-solid content-stretch flex items-center justify-center overflow-clip p-[4px] relative rounded-[6px] shrink-0 size-[22px]" data-node-id="3035:12216">
+                <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[6px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(1.0016e-15 0.77923 1.5972 7.1421e-15 11 -0.48933)'><stop stop-color='rgba(109,216,255,1)' offset='0'/><stop stop-color='rgba(82,178,222,0.75)' offset='0.25'/><stop stop-color='rgba(55,140,188,0.5)' offset='0.5'/><stop stop-color='rgba(0,63,122,0)' offset='1'/></radialGradient></defs></svg>\"), linear-gradient(180deg, rgba(0, 38, 76, 0.3) 0%, rgba(3, 50, 96, 0.3) 100%)" }} />
+                <div className="relative shrink-0 size-[22px]" data-node-id="3035:12217" data-name="能源_蒸汽">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+                </div>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_7px_0px_#00133c]" />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#b5e3ff] text-[16px] whitespace-nowrap" data-node-id="3035:12218">
+                <p className="leading-[12px]">微信</p>
+              </div>
+            </div>
+            <div className="col-1 content-stretch flex items-center ml-0 mt-[39px] relative row-1" data-node-id="3035:12219">
+              <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12220">
+                <p>
+                  <span className="leading-[18px] text-[20px]">18,450</span>
+                  <span className="leading-[18px] text-[12px]">条</span>
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center ml-0 mt-[65px] not-italic relative row-1 text-[12px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12221">
+              <p className="leading-[18px]">成功率 97.3%</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bg-gradient-to-r border border-[rgba(0,157,255,0)] border-solid from-[rgba(0,157,255,0)] h-[95.834px] left-[calc(87.5%+50px)] rounded-[3px] to-[rgba(67,183,255,0.1)] top-[calc(8.33%+44.67px)] w-[154px]" data-node-id="3035:12222" />
+        <div className="absolute content-stretch flex flex-col h-[95.86px] items-start justify-center left-[calc(91.67%+6px)] px-[12px] rounded-[3px] top-[calc(8.33%+44.5px)] w-[154px]" data-node-id="3035:12223">
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="3035:12224">
+            <div className="bg-gradient-to-r col-1 content-stretch flex from-[rgba(0,157,255,0.1)] gap-[4px] h-[31px] items-center ml-0 mt-0 px-[4px] relative row-1 to-[rgba(0,157,255,0)] w-[122px]" data-node-id="3035:12225">
+              <div className="border border-[#4b7bb5] border-solid content-stretch flex items-center justify-center overflow-clip p-[4px] relative rounded-[6px] shrink-0 size-[22px]" data-node-id="3035:12227">
+                <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[6px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(1.0016e-15 0.77923 1.5972 7.1421e-15 11 -0.48933)'><stop stop-color='rgba(109,216,255,1)' offset='0'/><stop stop-color='rgba(82,178,222,0.75)' offset='0.25'/><stop stop-color='rgba(55,140,188,0.5)' offset='0.5'/><stop stop-color='rgba(0,63,122,0)' offset='1'/></radialGradient></defs></svg>\"), linear-gradient(180deg, rgba(0, 38, 76, 0.3) 0%, rgba(3, 50, 96, 0.3) 100%)" }} />
+                <div className="relative shrink-0 size-[22px]" data-node-id="3035:12228" data-name="能源_蒸汽">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+                </div>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_7px_0px_#00133c]" />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#b5e3ff] text-[16px] whitespace-nowrap" data-node-id="3035:12229">
+                <p className="leading-[12px]">应急广播</p>
+              </div>
+            </div>
+            <div className="col-1 content-stretch flex items-center ml-0 mt-[39px] relative row-1" data-node-id="3035:12230">
+              <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12231">
+                <p>
+                  <span className="leading-[18px] text-[20px]">562</span>
+                  <span className="leading-[18px] text-[12px]">条</span>
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center ml-0 mt-[65px] not-italic relative row-1 text-[12px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12232">
+              <p className="leading-[18px]">成功率 99.1%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute contents left-[calc(89.58%+9px)] top-[calc(16.67%+70px)]" data-node-id="3035:12277">
+        <div className="absolute bg-gradient-to-r border border-[rgba(67,183,255,0.5)] border-solid content-stretch flex flex-col from-[rgba(67,183,255,0.1)] h-[95.86px] items-start justify-center left-[calc(79.17%+18px)] px-[12px] rounded-[3px] to-[rgba(0,157,255,0)] top-[calc(16.67%+70px)] w-[154px]" data-node-id="3035:12278">
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="3035:12279">
+            <div className="bg-gradient-to-r col-1 content-stretch flex from-[rgba(0,157,255,0.1)] gap-[4px] h-[31px] items-center ml-0 mt-0 px-[4px] relative row-1 to-[rgba(0,157,255,0)] w-[122px]" data-node-id="3035:12280">
+              <div className="border border-[#4b7bb5] border-solid content-stretch flex items-center justify-center overflow-clip p-[4px] relative rounded-[6px] shrink-0 size-[22px]" data-node-id="3035:12282">
+                <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[6px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(1.0016e-15 0.77923 1.5972 7.1421e-15 11 -0.48933)'><stop stop-color='rgba(109,216,255,1)' offset='0'/><stop stop-color='rgba(82,178,222,0.75)' offset='0.25'/><stop stop-color='rgba(55,140,188,0.5)' offset='0.5'/><stop stop-color='rgba(0,63,122,0)' offset='1'/></radialGradient></defs></svg>\"), linear-gradient(180deg, rgba(0, 38, 76, 0.3) 0%, rgba(3, 50, 96, 0.3) 100%)" }} />
+                <div className="relative shrink-0 size-[22px]" data-node-id="3035:12283" data-name="能源_蒸汽">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+                </div>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_7px_0px_#00133c]" />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#b5e3ff] text-[16px] whitespace-nowrap" data-node-id="3035:12284">
+                <p className="leading-[12px]">手机APP</p>
+              </div>
+            </div>
+            <div className="col-1 content-stretch flex items-center ml-0 mt-[39px] relative row-1" data-node-id="3035:12285">
+              <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12286">
+                <p>
+                  <span className="leading-[18px] text-[20px]">15,720</span>
+                  <span className="leading-[18px] text-[12px]">条</span>
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center ml-0 mt-[65px] not-italic relative row-1 text-[12px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12287">
+              <p className="leading-[18px]">成功率 98.6%</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute content-stretch flex flex-col h-[95.86px] items-start justify-center left-[calc(87.5%-24px)] px-[12px] rounded-[3px] top-[calc(16.67%+70px)] w-[154px]" data-node-id="3035:12288">
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="3035:12289">
+            <div className="bg-gradient-to-r col-1 content-stretch flex from-[rgba(0,157,255,0.1)] gap-[4px] h-[31px] items-center ml-0 mt-0 px-[4px] relative row-1 to-[rgba(0,157,255,0)] w-[122px]" data-node-id="3035:12290">
+              <div className="border border-[#4b7bb5] border-solid content-stretch flex items-center justify-center overflow-clip p-[4px] relative rounded-[6px] shrink-0 size-[22px]" data-node-id="3035:12292">
+                <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[6px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(1.0016e-15 0.77923 1.5972 7.1421e-15 11 -0.48933)'><stop stop-color='rgba(109,216,255,1)' offset='0'/><stop stop-color='rgba(82,178,222,0.75)' offset='0.25'/><stop stop-color='rgba(55,140,188,0.5)' offset='0.5'/><stop stop-color='rgba(0,63,122,0)' offset='1'/></radialGradient></defs></svg>\"), linear-gradient(180deg, rgba(0, 38, 76, 0.3) 0%, rgba(3, 50, 96, 0.3) 100%)" }} />
+                <div className="relative shrink-0 size-[22px]" data-node-id="3035:12293" data-name="能源_蒸汽">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+                </div>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_7px_0px_#00133c]" />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#b5e3ff] text-[16px] whitespace-nowrap" data-node-id="3035:12294">
+                <p className="leading-[12px]">电子屏</p>
+              </div>
+            </div>
+            <div className="col-1 content-stretch flex items-center ml-0 mt-[39px] relative row-1" data-node-id="3035:12295">
+              <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12296">
+                <p>
+                  <span className="leading-[18px] text-[20px]">236</span>
+                  <span className="leading-[18px] text-[12px]">条</span>
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center ml-0 mt-[65px] not-italic relative row-1 text-[12px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12297">
+              <p className="leading-[18px]">成功率 97.3%</p>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bg-gradient-to-r border border-[rgba(0,157,255,0)] border-solid from-[rgba(0,157,255,0)] h-[95.834px] left-[calc(87.5%+50px)] rounded-[3px] to-[rgba(67,183,255,0.1)] top-[calc(16.67%+70.17px)] w-[154px]" data-node-id="3035:12298" />
+        <div className="absolute content-stretch flex flex-col h-[95.86px] items-start justify-center left-[calc(91.67%+6px)] px-[12px] rounded-[3px] top-[calc(16.67%+70px)] w-[154px]" data-node-id="3035:12299">
+          <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="3035:12300">
+            <div className="bg-gradient-to-r col-1 content-stretch flex from-[rgba(0,157,255,0.1)] gap-[4px] h-[31px] items-center ml-0 mt-0 px-[4px] relative row-1 to-[rgba(0,157,255,0)] w-[122px]" data-node-id="3035:12301">
+              <div className="border border-[#4b7bb5] border-solid content-stretch flex items-center justify-center overflow-clip p-[4px] relative rounded-[6px] shrink-0 size-[22px]" data-node-id="3035:12303">
+                <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[6px]" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='1'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(1.0016e-15 0.77923 1.5972 7.1421e-15 11 -0.48933)'><stop stop-color='rgba(109,216,255,1)' offset='0'/><stop stop-color='rgba(82,178,222,0.75)' offset='0.25'/><stop stop-color='rgba(55,140,188,0.5)' offset='0.5'/><stop stop-color='rgba(0,63,122,0)' offset='1'/></radialGradient></defs></svg>\"), linear-gradient(180deg, rgba(0, 38, 76, 0.3) 0%, rgba(3, 50, 96, 0.3) 100%)" }} />
+                <div className="relative shrink-0 size-[22px]" data-node-id="3035:12304" data-name="能源_蒸汽">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+                </div>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_7px_0px_#00133c]" />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#b5e3ff] text-[16px] whitespace-nowrap" data-node-id="3035:12305">
+                <p className="leading-[12px]">传真</p>
+              </div>
+            </div>
+            <div className="col-1 content-stretch flex items-center ml-0 mt-[39px] relative row-1" data-node-id="3035:12306">
+              <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12307">
+                <p>
+                  <span className="leading-[18px] text-[20px]">85</span>
+                  <span className="leading-[18px] text-[12px]">条</span>
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] bg-clip-text bg-gradient-to-b col-1 flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] from-white justify-center ml-0 mt-[65px] not-italic relative row-1 text-[12px] text-[transparent] to-[#a6ddff] whitespace-nowrap" data-node-id="3035:12308">
+              <p className="leading-[18px]">成功率 96.1%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute border border-[#1273cd] border-solid h-[40px] left-[calc(79.17%+10px)] overflow-clip rounded-[6px] top-[calc(33.33%+66px)] w-[362px]" data-node-id="3035:12379" style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg viewBox='0 0 362 40' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><rect x='0' y='0' height='100%' width='100%' fill='url(%23grad)' opacity='0.20000000298023224'/><defs><radialGradient id='grad' gradientUnits='userSpaceOnUse' cx='0' cy='0' r='10' gradientTransform='matrix(-7.0198e-14 -4.8304 57.521 -1.3376e-12 188.15 48.304)'><stop stop-color='rgba(41,173,255,1)' offset='0'/><stop stop-color='rgba(32,134,198,0.75)' offset='0.25'/><stop stop-color='rgba(23,95,142,0.5)' offset='0.5'/><stop stop-color='rgba(14,56,85,0.25)' offset='0.75'/><stop stop-color='rgba(5,17,29,0)' offset='1'/></radialGradient></defs></svg>\"), linear-gradient(180.00000000000296deg, rgba(0, 16, 28, 0) 0%, rgba(0, 31, 51, 0.3) 98.409%)" }} data-name="列表-01">
+        <div className="absolute bottom-[-1px] content-stretch flex items-center left-[-1px] px-[8px] py-[6px] top-[-1px] w-[98px]" data-node-id="3035:12380">
+          <div className="h-[32px] relative shrink-0 w-[338px]" data-node-id="3035:12412">
+            <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] h-[32px] justify-center leading-[0] left-[37px] not-italic text-[#c1ddee] text-[14px] top-[16px] w-[132px]" data-node-id="3035:12381">
+              <p className="leading-[16px]">橙色暴雨预警-东河区</p>
+            </div>
+            <div className="absolute inset-[12.5%_91.12%_12.5%_1.48%]" data-node-id="3055:13996" data-name="表-水">
+              <div className="absolute inset-[0_-3.31%_-16.15%_-3.31%]">
+                <img alt="" className="block max-w-none size-full" src={img3} />
+              </div>
+            </div>
+            <div className="-translate-x-full -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] left-[328px] not-italic text-[#c1ddee] text-[14px] text-right top-[15px] whitespace-nowrap" data-node-id="3035:12404">
+              <p className="leading-[16px]">07-04 20:15</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

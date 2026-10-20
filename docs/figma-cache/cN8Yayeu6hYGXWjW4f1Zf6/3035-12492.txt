@@ -1,0 +1,427 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/1fc26abc-5b1b-44ec-9252-d71bddbe6611";
+const img001 = `${assetPathPrefix}/141ef.svg`;
+const imgBg = `${assetPathPrefix}/96765.svg`;
+const img = `${assetPathPrefix}/1a5d7.svg`;
+const imgUnion = `${assetPathPrefix}/fec21.svg`;
+const imgUnion1 = `${assetPathPrefix}/4916d.svg`;
+const imgUnion2 = `${assetPathPrefix}/d0b07.svg`;
+const imgUnion3 = `${assetPathPrefix}/7e822.svg`;
+const img1 = `${assetPathPrefix}/a6f48.svg`;
+const imgY = `${assetPathPrefix}/c77ce.svg`;
+const img2 = `${assetPathPrefix}/d3671.svg`;
+const img3 = `${assetPathPrefix}/df87d.svg`;
+const img4 = `${assetPathPrefix}/0e718.svg`;
+const img5 = `${assetPathPrefix}/1e02d.svg`;
+const img6 = `${assetPathPrefix}/e004f.svg`;
+const img7 = `${assetPathPrefix}/807ab.svg`;
+const img8 = `${assetPathPrefix}/b4638.svg`;
+const img9 = `${assetPathPrefix}/748ff.svg`;
+const img10 = `${assetPathPrefix}/059cf.svg`;
+const imgVector883 = `${assetPathPrefix}/b6ad4.svg`;
+const img01 = `${assetPathPrefix}/ddb4d.svg`;
+
+function Component001({ className }: { className?: string }) {
+  return (
+    <div className={className || "h-[187px] relative w-[8.8px]"} data-node-id="368:4262" data-name="柱状图-001">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img001} />
+    </div>
+  );
+}
+
+export default function Group1321315428() {
+  return (
+    <div className="contents relative size-full" data-node-id="3035:12492">
+      <div className="absolute contents left-[calc(20.83%+40px)] top-[calc(75%-9.5px)]" data-node-id="3035:12176">
+        <div className="absolute bg-gradient-to-b border border-[#82bcff] border-solid from-[rgba(7,54,108,0.3)] h-[241px] right-[calc(50%+3px)] rounded-[6px] to-[rgba(6,24,45,0.09)] top-[calc(75%-9.5px)] w-[517px]" data-node-id="3033:11197" data-name="S-209" />
+        <div className="absolute h-[42px] left-[calc(20.83%+40px)] top-[calc(75%-9.5px)] w-[517px]" data-node-id="3033:11198" data-name="一级标题样式-03-h209">
+          <div className="absolute inset-[7.14%_0.01%_2.38%_0.01%]" data-node-id="I3033:11198;367:3313" data-name="bg">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBg} />
+          </div>
+          <div className="absolute inset-[97.62%_0.01%_2.38%_0.23%]" data-node-id="I3033:11198;367:3314" data-name="线">
+            <div className="absolute inset-[-0.5px_0]">
+              <img alt="" className="block max-w-none size-full" src={img} />
+            </div>
+          </div>
+          <div className="absolute bottom-px h-[18.034px] right-[0.03px] w-[44px]" data-node-id="I3033:11198;367:3315" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+          </div>
+          <div className="absolute bottom-px h-[1.023px] right-[10.09px] w-[33.944px]" data-node-id="I3033:11198;367:3316" data-name="Union">
+            <div className="absolute inset-[-293.37%_-5.89%_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgUnion1} />
+            </div>
+          </div>
+          <div className="absolute bottom-[3.77px] h-[22.113px] left-[10.6px] w-[10.992px]" data-node-id="I3033:11198;367:3317" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion2} />
+          </div>
+          <div className="absolute bottom-px h-[38px] left-[-0.01px] w-[16.691px]" data-node-id="I3033:11198;367:3318" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion3} />
+          </div>
+          <div className="absolute bottom-[-2.43px] flex h-[44.864px] items-center justify-center left-[-7.91px] mix-blend-plus-lighter w-[37.927px]" data-node-id="I3033:11198;367:3319">
+            <div className="-scale-y-100 flex-none rotate-[20.68deg]">
+              <div className="h-[38.077px] relative w-[26.164px]" data-name="发光">
+                <div className="absolute inset-[-15.76%_-22.93%]">
+                  <img alt="" className="block max-w-none size-full" src={img1} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 absolute flex h-[32.336px] items-center justify-center left-[21.18px] top-[calc(50%+0.12px)] w-[81.507px]" data-node-id="I3033:11198;367:3320">
+            <div className="-skew-x-18 flex-none scale-y-95">
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:75_SemiBold'] justify-center leading-[0] not-italic relative text-[24px] text-shadow-[0px_3px_10px_rgba(0,0,0,0.5),0px_0px_6px_#0084ff] text-white whitespace-nowrap">
+                <p className="leading-[normal]">降水-位移</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute contents left-[calc(20.83%+49.21px)] top-[calc(83.33%-21px)]" data-node-id="3035:12494">
+          <div className="absolute content-stretch flex flex-col h-[163px] items-start left-[calc(20.83%+49.21px)] top-[calc(83.33%-21px)] w-[468.089px]" data-node-id="3035:12495" data-name="轴-线">
+            <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px relative w-full" data-node-id="I3035:12495;63:16119">
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12495;63:16121" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12495;63:16121;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12495;63:16121;63:5752">
+                    120
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12495;63:16121;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12495;63:16122" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12495;63:16122;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12495;63:16122;63:5752">
+                    90
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12495;63:16122;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12495;63:16123" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12495;63:16123;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12495;63:16123;63:5752">
+                    60
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12495;63:16123;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12495;63:16124" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12495;63:16124;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12495;63:16124;63:5752">
+                    30
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12495;63:16124;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12495;63:16125" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12495;63:16125;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['D-DIN:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12495;63:16125;63:5752">
+                    0
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12495;63:16125;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex h-[12px] items-end justify-center pl-[30px] relative shrink-0 w-full" data-node-id="I3035:12495;63:16126" data-name="X轴-无线">
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5534" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5535">
+                  07-03
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5536" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5537">
+                  20
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5538" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5539">
+                  07-04
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5540" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5541">
+                  00
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5542" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5543">
+                  08
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5544" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5545">
+                  16
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5546" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5547">
+                  20
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12495;63:16126;63:5548" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12495;63:16126;63:5549">
+                  07-05
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute content-stretch flex items-center justify-end left-[calc(45.83%+26px)] top-[calc(91.67%+36.5px)] w-[26px]" data-node-id="3035:12589" data-name="D-Din">
+            <p className="[word-break:break-word] font-['D-DIN:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="3035:12590">
+              0
+            </p>
+          </div>
+          <p className="-translate-x-full [word-break:break-word] absolute font-['DIN_Next_LT_Pro:Regular'] leading-[10px] left-[calc(45.83%+52px)] not-italic text-[#cfe3ec] text-[12px] text-right top-[calc(91.67%+1.5px)] whitespace-nowrap" data-node-id="3035:12587">
+            30
+          </p>
+          <div className="absolute content-stretch flex items-center justify-end left-[calc(45.83%+29px)] top-[calc(83.33%+49px)] w-[26px]" data-node-id="3035:12584" data-name="D-Din">
+            <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="3035:12585">
+              60
+            </p>
+          </div>
+          <div className="absolute content-stretch flex items-center justify-end left-[calc(45.83%+29px)] top-[calc(83.33%-21px)] w-[26px]" data-node-id="3035:12580" data-name="D-Din">
+            <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="3035:12581">
+              120
+            </p>
+          </div>
+          <div className="absolute content-stretch flex gap-[32px] h-[139px] items-end left-[calc(25%-1px)] px-[16px] top-[calc(83.33%-17px)] w-[438px]" data-node-id="3035:12496" data-name="柱状图">
+            <Component001 className="flex-[1_0_0] h-full min-w-px relative" />
+            <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="3035:12498" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+            </div>
+            <div className="flex-[1_0_0] h-[145px] min-w-px relative" data-node-id="3035:12499" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+            </div>
+            <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="3035:12500" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img4} />
+            </div>
+            <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="3035:12501" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img5} />
+            </div>
+            <div className="flex-[1_0_0] h-[145px] min-w-px relative" data-node-id="3035:12502" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img6} />
+            </div>
+            <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="3035:12503" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img7} />
+            </div>
+            <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="3035:12504" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img8} />
+            </div>
+            <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="3035:12505" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img9} />
+            </div>
+            <div className="flex-[1_0_0] h-full min-w-px relative" data-node-id="3035:12506" data-name="柱状图-001">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img10} />
+            </div>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute bottom-[81.14px] flex h-[65.855px] items-center justify-center left-[calc(35.42%+26.16px)] w-[420.322px]" data-node-id="3035:12592">
+          <div className="-scale-y-100 flex-none rotate-180">
+            <div className="h-[65.855px] relative w-[420.322px]">
+              <div className="absolute inset-[-0.17%_-0.24%_-1.52%_0]">
+                <img alt="" className="block max-w-none size-full" src={imgVector883} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(50%+13px)] top-[calc(75%-9.5px)]" data-node-id="3035:12177">
+        <div className="absolute bg-gradient-to-b border border-[#82bcff] border-solid from-[rgba(7,54,108,0.3)] h-[238px] right-[calc(20.83%+30px)] rounded-[6px] to-[rgba(6,24,45,0.09)] top-[calc(75%-6.5px)] w-[517px]" data-node-id="3035:12178" data-name="S-209" />
+        <div className="absolute contents left-[calc(50%+22.21px)] top-[calc(83.33%-21px)]" data-node-id="3035:12594">
+          <div className="absolute content-stretch flex flex-col h-[163px] items-start left-[calc(50%+22.21px)] top-[calc(83.33%-21px)] w-[468.089px]" data-node-id="3035:12595" data-name="轴-线">
+            <div className="content-stretch flex flex-[1_0_0] flex-col items-start justify-between min-h-px relative w-full" data-node-id="I3035:12595;63:16119">
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12595;63:16121" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12595;63:16121;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12595;63:16121;63:5752">
+                    120
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12595;63:16121;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12595;63:16122" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12595;63:16122;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12595;63:16122;63:5752">
+                    90
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12595;63:16122;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12595;63:16123" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12595;63:16123;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12595;63:16123;63:5752">
+                    60
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12595;63:16123;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12595;63:16124" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12595;63:16124;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12595;63:16124;63:5752">
+                    30
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12595;63:16124;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] h-[12px] items-center relative shrink-0 w-full" data-node-id="I3035:12595;63:16125" data-name=".Y轴">
+                <div className="content-stretch flex items-center justify-end relative shrink-0 w-[26px]" data-node-id="I3035:12595;63:16125;63:5751" data-name="D-Din">
+                  <p className="[word-break:break-word] font-['D-DIN:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="I3035:12595;63:16125;63:5752">
+                    0
+                  </p>
+                </div>
+                <div className="flex-[1_0_0] h-0 min-w-px relative" data-node-id="I3035:12595;63:16125;63:5753" data-name="Y轴线">
+                  <div className="absolute inset-[-1px_0_0_0]">
+                    <img alt="" className="block max-w-none size-full" src={imgY} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex h-[12px] items-end justify-center pl-[30px] relative shrink-0 w-full" data-node-id="I3035:12595;63:16126" data-name="X轴-无线">
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5534" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5535">
+                  07-03
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5536" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5537">
+                  20
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5538" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5539">
+                  07-04
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5540" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5541">
+                  00
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5542" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5543">
+                  08
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5544" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5545">
+                  16
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5546" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5547">
+                  20
+                </p>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-full items-end justify-center min-w-px relative" data-node-id="I3035:12595;63:16126;63:5548" data-name="D-Din">
+                <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-center whitespace-nowrap" data-node-id="I3035:12595;63:16126;63:5549">
+                  07-05
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute content-stretch flex items-center justify-end left-[calc(75%-1px)] top-[calc(91.67%+36.5px)] w-[26px]" data-node-id="3035:12596" data-name="D-Din">
+            <p className="[word-break:break-word] font-['D-DIN:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="3035:12597">
+              0
+            </p>
+          </div>
+          <p className="-translate-x-full [word-break:break-word] absolute font-['DIN_Next_LT_Pro:Regular'] leading-[10px] left-[calc(75%+25px)] not-italic text-[#cfe3ec] text-[12px] text-right top-[calc(91.67%+1.5px)] whitespace-nowrap" data-node-id="3035:12598">
+            30
+          </p>
+          <div className="absolute content-stretch flex items-center justify-end left-[calc(75%+2px)] top-[calc(83.33%+49px)] w-[26px]" data-node-id="3035:12599" data-name="D-Din">
+            <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="3035:12600">
+              60
+            </p>
+          </div>
+          <div className="absolute content-stretch flex items-center justify-end left-[calc(75%+2px)] top-[calc(83.33%-21px)] w-[26px]" data-node-id="3035:12601" data-name="D-Din">
+            <p className="[word-break:break-word] font-['DIN_Next_LT_Pro:Regular'] leading-[10px] not-italic relative shrink-0 text-[#cfe3ec] text-[12px] text-right whitespace-nowrap" data-node-id="3035:12602">
+              120
+            </p>
+          </div>
+          <div className="absolute h-[139px] left-[calc(50%+52px)] top-[calc(83.33%-17px)] w-[438px]" data-node-id="3035:12603" data-name="柱状图" />
+        </div>
+        <div className="absolute h-[42px] left-[calc(50%+13px)] top-[calc(75%-9.5px)] w-[517px]" data-node-id="3035:12179" data-name="一级标题样式-03-h209">
+          <div className="absolute inset-[7.14%_0.01%_2.38%_0.01%]" data-node-id="I3035:12179;367:3313" data-name="bg">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBg} />
+          </div>
+          <div className="absolute inset-[97.62%_0.01%_2.38%_0.23%]" data-node-id="I3035:12179;367:3314" data-name="线">
+            <div className="absolute inset-[-0.5px_0]">
+              <img alt="" className="block max-w-none size-full" src={img} />
+            </div>
+          </div>
+          <div className="absolute bottom-px h-[18.034px] right-[0.03px] w-[44px]" data-node-id="I3035:12179;367:3315" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+          </div>
+          <div className="absolute bottom-px h-[1.023px] right-[10.09px] w-[33.944px]" data-node-id="I3035:12179;367:3316" data-name="Union">
+            <div className="absolute inset-[-293.37%_-5.89%_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgUnion1} />
+            </div>
+          </div>
+          <div className="absolute bottom-[3.77px] h-[22.113px] left-[10.6px] w-[10.992px]" data-node-id="I3035:12179;367:3317" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion2} />
+          </div>
+          <div className="absolute bottom-px h-[38px] left-[-0.01px] w-[16.691px]" data-node-id="I3035:12179;367:3318" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion3} />
+          </div>
+          <div className="absolute bottom-[-2.43px] flex h-[44.864px] items-center justify-center left-[-7.91px] mix-blend-plus-lighter w-[37.927px]" data-node-id="I3035:12179;367:3319">
+            <div className="-scale-y-100 flex-none rotate-[20.68deg]">
+              <div className="h-[38.077px] relative w-[26.164px]" data-name="发光">
+                <div className="absolute inset-[-15.76%_-22.93%]">
+                  <img alt="" className="block max-w-none size-full" src={img1} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="-translate-y-1/2 absolute flex h-[32.336px] items-center justify-center left-[21.18px] top-[calc(50%+0.12px)] w-[81.507px]" data-node-id="I3035:12179;367:3320">
+            <div className="-skew-x-18 flex-none scale-y-95">
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:75_SemiBold'] justify-center leading-[0] not-italic relative text-[24px] text-shadow-[0px_3px_10px_rgba(0,0,0,0.5),0px_0px_6px_#0084ff] text-white whitespace-nowrap">
+                <p className="leading-[normal]">水位-流量</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-[174px] left-[calc(50%+53px)] top-[calc(75%+34.5px)] w-[435px]" data-node-id="3055:13774" data-name="折线图-01" />
+      </div>
+      <div className="absolute h-[148px] left-[calc(50%+64px)] top-[calc(75%+53.5px)] w-[422px]" data-node-id="3055:13778" data-name="折线图-01">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img01} />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

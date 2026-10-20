@@ -1,0 +1,42 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/8c93b659-ac3f-4788-9c69-f529a6efc728";
+const imgHuaban67229540601 = `${assetPathPrefix}/1ecc7.png`;
+const imgPolygon2 = `${assetPathPrefix}/9db00.svg`;
+const imgPolygon3 = `${assetPathPrefix}/0f3b2.svg`;
+
+export default function Component() {
+  return (
+    <div className="bg-[rgba(24,166,255,0.05)] relative size-full" data-node-id="3055:14109" data-name="环形图 图例">
+      <div className="absolute content-stretch flex gap-[4px] items-center left-[8px] top-[6px]" data-node-id="3055:14110" data-name="名称">
+        <div className="h-[6px] relative shrink-0 w-[5.196px]" data-node-id="3055:14111">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon2} />
+        </div>
+        <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[16px] whitespace-nowrap" data-node-id="3055:14112">
+          <p className="leading-[24px]">风向风速</p>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex items-center left-[17px] top-[54px]" data-node-id="3055:14113" data-name="名称">
+        <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[14px] whitespace-nowrap" data-node-id="3055:14114">
+          <p className="leading-[24px]">东南风</p>
+        </div>
+      </div>
+      <div className="-translate-y-1/2 absolute h-[10.444px] left-0 top-1/2 w-[1.5px]" data-node-id="3055:14115">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon3} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] left-[17px] not-italic text-[#18a6ff] text-[14px] top-[42px] whitespace-nowrap" data-node-id="3055:14116">
+        <p className="leading-[24px]">2.8m/s</p>
+      </div>
+      <div className="absolute left-[20px] size-[72px] top-[86px]" data-node-id="3055:14218" data-name="huaban-6722954060 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHuaban67229540601} />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

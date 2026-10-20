@@ -13,7 +13,7 @@ onMounted(() => {
 });
 watch(
   () => props.option,
-  (v) => chart?.setOption(v),
+  (v) => chart?.setOption(v, { notMerge: true }),
 );
 onBeforeUnmount(() => {
   observer?.disconnect();
