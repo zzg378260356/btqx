@@ -6,6 +6,7 @@ import DesignAsset from "./components/DesignAsset.vue";
 import PanelHeading from "./components/PanelHeading.vue";
 import MetricCard from "./components/MetricCard.vue";
 import MapLegend from "./components/MapLegend.vue";
+import OverviewScreen from "./components/OverviewScreen.vue";
 import { designData, designTracking, type DashboardData, type Warning } from "./designData";
 const Scene = defineAsyncComponent(() => import("./components/Scene.vue"));
 const DigitalHuman = defineAsyncComponent(() => import("./components/DigitalHuman.vue"));
@@ -24,11 +25,13 @@ const status = ref("");
 const selected = ref<Warning | null>(null);
 const station = ref("");
 const error = ref("");
-const active = ref("综合态势");
+const mapStats = ref({ points: 0, devices: 0, online: 0 });
+const pageNames: Record<string, string> = { overview: "综合态势", twin: "预警中心", warnings: "预警中心", map: "三维孪生一张图", devices: "监测设备中心" };
+const active = ref(pageNames[window.location.hash.slice(1)] || "综合态势");
 const overview = ref(false);
 const clock = ref(new Date());
 const scale = ref(1);
-const offset = ref({ x: 0, y: 0 });
+const layoutWidth = ref(1920);
 let timer: ReturnType<typeof setInterval>;
 let poll: ReturnType<typeof setInterval>;
 const tabs = ["综合态势", "三维孪生一张图", "监测设备中心", "检测点详情", "预警中心", "应急处置指挥", "智能模型分析", "数据资源中心", "事态复盘评估"];
@@ -55,21 +58,16 @@ const pie = computed<EChartsOption>(() => ({
     { type: "pie", radius: [85, 86], center: [87, 133], silent: true, label: { show: false }, data: [{ value: 1, itemStyle: { color: "#2aa9dd" } }] },
   ],
 }));
-const pins = [
-  { x: 574, y: 298, asset: "c15d8a40-8eab-4a37-8619-734664d565ab.svg", name: "白云鄂博矿区" },
-  { x: 810, y: 381, asset: "7c68fa92-a107-4cea-aa9a-d55abc36f7f3.svg", name: "白云鄂博矿区监测点" },
-  { x: 678, y: 616, asset: "51186279-360e-4038-83a2-1defd228bf00.svg", name: "土默特右旗监测点" },
-  { x: 1151, y: 685, asset: "1cf17eea-f58c-457b-90d7-d69c9afaa2ae.svg", name: "东河区监测点" },
-  { x: 901, y: 688, asset: "1cf17eea-f58c-457b-90d7-d69c9afaa2ae.svg", name: "青山区监测点" },
-  { x: 1119, y: 415, asset: "1cf17eea-f58c-457b-90d7-d69c9afaa2ae.svg", name: "达尔罕茂明安联合旗", red: true },
-];
 const channels = [
   { name: "短信", value: "26,830", rate: "98.6" }, { name: "微信", value: "18,450", rate: "97.3" },
   { name: "应急广播", value: "562", rate: "99.1" }, { name: "手机APP", value: "15,720", rate: "98.6" },
   { name: "电子屏", value: "236", rate: "97.3" }, { name: "传真", value: "85", rate: "96.1" },
 ];
 const full = ref(false);
-function fit() { scale.value = Math.min(window.innerWidth / 1920, window.innerHeight / 1080); offset.value = { x: (window.innerWidth - 1920 * scale.value) / 2, y: (window.innerHeight - 1080 * scale.value) / 2 }; }
+function fit() {
+  scale.value = window.innerHeight / 1080;
+  layoutWidth.value = window.innerWidth / scale.value;
+}
 async function load() {
   try {
     const response = await fetch("/api/dashboard");
@@ -81,28 +79,27 @@ async function load() {
 }
 function setMode() { mode.value = mode.value === "design" ? "live" : "design"; level.value = district.value = status.value = ""; if (mode.value === "live") load(); }
 function navigate(tab: string) {
-  if (tab === "监测设备中心") { window.open("/admin/devices", "_blank", "noopener"); return; }
-  if (["综合态势", "三维孪生一张图", "预警中心"].includes(tab)) { active.value = tab; if (tab === "预警中心") overview.value = true; return; }
+  const page = Object.keys(pageNames).find(key => pageNames[key] === tab);
+  if (page) { active.value = tab; overview.value = false; selected.value = null; station.value = ""; window.location.hash = page; return; }
   overview.value = true;
 }
+function syncPage() { active.value = pageNames[window.location.hash.slice(1)] || "综合态势"; overview.value = false; selected.value = null; station.value = ""; }
 async function toggleFullscreen() {
   if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen();
 }
 function fullscreenChanged() { full.value = !!document.fullscreenElement; fit(); }
 function onKey(event: KeyboardEvent) { if (event.key === "Escape") { selected.value = null; station.value = ""; overview.value = false; } }
 onMounted(() => {
-  fit(); load(); window.addEventListener("resize", fit); window.addEventListener("keydown", onKey); document.addEventListener("fullscreenchange", fullscreenChanged);
+  fit(); load(); window.addEventListener("resize", fit); window.addEventListener("keydown", onKey); window.addEventListener("hashchange", syncPage); document.addEventListener("fullscreenchange", fullscreenChanged);
   timer = setInterval(() => { clock.value = new Date(); }, 1000); poll = setInterval(load, 30000);
 });
-onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.removeEventListener("resize", fit); window.removeEventListener("keydown", onKey); document.removeEventListener("fullscreenchange", fullscreenChanged); });
+onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.removeEventListener("resize", fit); window.removeEventListener("keydown", onKey); window.removeEventListener("hashchange", syncPage); document.removeEventListener("fullscreenchange", fullscreenChanged); });
 </script>
 <template>
   <DigitalHuman v-if="digitalHumanOpen" @close="digitalHumanOpen = false" />
   <div class="viewport">
-    <div class="dashboard" :style="{ transform: 'translate(' + offset.x + 'px,' + offset.y + 'px) scale(' + scale + ')' }">
-      <img class="park-background" :src="b + '67f75703-9c95-4967-b8f1-605ae1cf207d.png'" alt="" />
-      <div class="background-tint"></div>
-      <DesignAsset class="background-mask" :src="b + '6378aeda-e93c-4dcd-8733-c4bd21d513a2.svg'" :width="3275.76" :height="2262.13" />
+    <Scene v-show="active !== '监测设备中心'" @stats="mapStats = $event" />
+    <div class="dashboard" :style="{ width: layoutWidth + 'px', transform: 'scale(' + scale + ')', '--content-extra': (layoutWidth - 1920) + 'px' }">
       <header class="topbar">
         <div class="weather">
           <div class="time"><b>{{ mode === 'design' ? '12:23:37' : clock.toLocaleTimeString('zh-CN', { hour12: false }) }}</b><small>{{ mode === 'design' ? '2026-10-08' : clock.toLocaleDateString('sv-SE') }}</small></div>
@@ -112,6 +109,7 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
         </div>
         <div class="title-frame"></div><h1>包头市重点区域气象灾害监测预警平台</h1>
         <div class="header-actions">
+          <button class="digital-human-button" aria-haspopup="dialog" @click="digitalHumanOpen = true">数字人</button>
           <button class="notification-button" title="查看预警信息" @click="overview = true"><span class="bell"></span><i></i></button>
           <button class="fullscreen-button" :title="full ? '退出全屏' : '全屏显示'" @click="toggleFullscreen"><span></span></button>
           <a class="admin-link" href="/admin" target="_blank" rel="noopener"><img :src="b + '966bd149-7415-4ebd-ae96-59aeb9c9b7e0.png'" alt="" />管理员<DesignAsset :src="b + '01eed408-0692-4304-9454-deb7d058440d.svg'" :width="16" :height="16" /></a>
@@ -125,10 +123,13 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
         </div>
       </header>
       <nav class="navigation" aria-label="平台导航">
-        <button v-for="(tab, i) in tabs" :key="tab" :class="{ active: active === tab }" @click="navigate(tab)">
+        <button v-for="(tab, i) in tabs" :key="tab" :class="{ active: active === tab }" :aria-current="active === tab ? 'page' : undefined" @click="navigate(tab)">
           <DesignAsset class="nav-texture" :src="b + navAssets[i]" :width="48" :height="i === 4 ? 207.147 : 208" :style="{ transform: i > 4 ? 'rotate(90deg) scaleX(-1)' : 'rotate(-90deg)' }" /><span>{{ tab }}</span>
         </button>
       </nav>
+      <OverviewScreen v-if="active === '综合态势'" :device-online-rate="mapStats.devices ? Math.round(mapStats.online / mapStats.devices * 1000) / 10 : 0" @warnings="navigate('预警中心')" />
+      <main v-else-if="active === '监测设备中心'" aria-label="监测设备中心"></main>
+      <template v-else-if="active === '预警中心'">
       <aside class="left-column side-panel">
         <section class="warning-statistics">
           <PanelHeading title="预警统计" more @more="overview = true" />
@@ -163,15 +164,6 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
         <MetricCard :caption="mode === 'design' ? '较昨日 +12' : '在线监测设备'" :value="mode === 'design' ? 36 : data.devices.online" :unit="mode === 'design' ? '条' : '台'" :label="mode === 'design' ? '预警解除' : '在线设备'" />
         <MetricCard :caption="mode === 'design' ? '较昨日 +28' : '设备在线率'" :value="mode === 'design' ? 152 : Math.round(data.devices.online / (data.devices.total || 1) * 100)" :unit="mode === 'design' ? '个' : '%'" :label="mode === 'design' ? '预警触发检测点' : '在线率'" />
       </div>
-      <div v-if="active !== '三维孪生一张图'" class="map-overlays">
-        <button v-for="pin in pins" :key="pin.name" class="map-pin" :style="{ left: pin.x + 'px', top: pin.y + 'px' }" :aria-label="pin.name" @click="station = pin.name">
-          <span v-if="pin.red" class="unavailable-red-pin"><i></i></span>
-          <DesignAsset v-else :src="b + pin.asset" :width="52.83" :height="102.48" />
-        </button>
-        <button class="region-label label-orange" @click="station = '白云鄂博矿区'">白云鄂博矿区</button>
-        <button class="region-label label-blue" @click="station = '达尔罕茂明安联合旗'">达尔汗茂明安联合旗</button>
-      </div>
-      <div v-else class="cesium-container"><Scene @select="station = $event" /></div>
       <MapLegend :names="names" @select="key => level = level === key ? '' : key" />
       <section class="tracking-panel">
         <PanelHeading title="预警处置跟踪" :width="1091" />
@@ -191,12 +183,12 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
           <div class="channel-grid"><article v-for="c in channels" :key="c.name"><span><i class="channel-icon"></i>{{ c.name }}</span><strong>{{ c.value }}<small>条</small></strong><small>成功率 {{ c.rate }}%</small></article></div>
         </section>
       </aside>
-      <div class="mode-control"><button @click="digitalHumanOpen = true" aria-haspopup="dialog">数字人</button><button @click="setMode">{{ mode === 'design' ? '设计对照' : '实时数据' }} ⌄</button><span v-if="mode === 'live' && error">{{ error }}</span><span v-else-if="mode === 'live'">每30秒更新</span></div>
-      <div v-if="station" class="station-popup"><button class="close-button" @click="station = ''" aria-label="关闭">×</button><h3>{{ station }}</h3><p>重点区域气象灾害监测点</p><button class="action-button" @click="overview = true; station = ''">查看相关预警</button></div>
+      </template>
+      <div v-if="active === '预警中心'" class="mode-control"><button @click="setMode">{{ mode === 'design' ? '设计对照' : '实时数据' }} ⌄</button><span v-if="mode === 'live' && error">{{ error }}</span><span v-else-if="mode === 'live'">每30秒更新</span></div>
       <div v-if="selected || overview" class="modal-backdrop" @click.self="selected = null; overview = false">
         <section class="modal" role="dialog" aria-modal="true" :aria-label="selected ? '预警详情' : '预警中心'"><button class="close-button" @click="selected = null; overview = false" aria-label="关闭">×</button><PanelHeading :title="selected ? '预警详情' : '预警中心'" :width="580" />
           <template v-if="selected"><h3>{{ selected.title }}</h3><p :style="{ color: colors[selected.level] }">{{ names[selected.level] }}预警 · {{ selected.status }}</p><p>影响区域：{{ selected.district }}</p><p>发布时间：{{ selected.published_at }}</p><p>责任单位：{{ selected.responsible_unit }}</p></template>
-          <template v-else><p>{{ mode === 'design' ? 'Figma 设计示例数据' : '当前数据服务' }} · 共 {{ filtered.length }} 条预警</p><div class="overview-list"><button v-for="w in filtered" :key="w.id" @click="selected = w"><span :style="{ color: colors[w.level] }">{{ names[w.level] }}</span>　{{ w.title }}<small>{{ w.published_at }}</small></button></div></template>
+          <template v-else><p>{{ mode === 'design' ? '演示数据' : '当前数据服务' }} · 共 {{ filtered.length }} 条预警</p><div class="overview-list"><button v-for="w in filtered" :key="w.id" @click="selected = w"><span :style="{ color: colors[w.level] }">{{ names[w.level] }}</span>　{{ w.title }}<small>{{ w.published_at }}</small></button></div></template>
         </section>
       </div>
     </div>

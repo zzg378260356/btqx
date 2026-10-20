@@ -6,7 +6,10 @@ button { border: 0; background: none; cursor: pointer; padding: 0; }
 button:focus-visible, a:focus-visible, tr:focus-visible { outline: 2px solid #5be6ff; outline-offset: 3px; }
 a { text-decoration: none; }
 .viewport { height: 100vh; width: 100vw; overflow: hidden; }
-.dashboard { position: absolute; width: 1920px; height: 1080px; overflow: hidden; transform-origin: top left; background: #071a30; }
+.dashboard .side-panel { background: linear-gradient(#062440de,#041c30d9); backdrop-filter: blur(3px); }
+.dashboard { position: absolute; width: 1920px; height: 1080px; overflow: hidden; transform-origin: top left; background: transparent; pointer-events: none; z-index: 1; }
+.dashboard header,.dashboard nav,.dashboard .side-panel,.dashboard .metrics,.dashboard .tracking-panel,.dashboard .map-legend,.dashboard .mode-control,.dashboard .modal-backdrop { pointer-events: auto; }
+.dashboard:has(.modal-backdrop) { z-index: 10; }
 .park-background { position: absolute; left: -46.69775px; top: -4px; width: 2027.5917px; height: 1136.3425px; object-fit: cover; pointer-events: none; }
 .background-tint { position: absolute; inset: -17.78px -6.59px; background: #0084ff4d; mix-blend-mode: soft-light; pointer-events: none; }
 .background-mask.design-asset { position: absolute; left: -677.88px; top: -590.56px; }
@@ -41,7 +44,9 @@ h1 { position: absolute; left: 625px; top: 9px; margin: 0; color: #fff; font-siz
 .navigation button { width: 195px; height: 48px; position: relative; font-size: 22px; font-weight: 600; color: #e0ecff; }
 .navigation .nav-texture { position: absolute; left: 73px; top: -80px; transform: rotate(-90deg); opacity: .9; }
 .navigation span:not(.design-asset) { position: relative; }
-.navigation button.active { text-shadow: 0 0 12px #0084ff; }
+.navigation button.active { text-shadow: 0 0 12px #00c3ff; color: #fff; font-weight: 700; }
+.navigation button.active .nav-texture { filter: brightness(1.5) saturate(1.2); }
+.navigation button.active::after { content: ""; position: absolute; left: 17px; right: 18px; bottom: 0; height: 2px; background: linear-gradient(90deg, transparent,#6de7ff,transparent); box-shadow: 0 2px 12px #00bfff; }
 .navigation button:hover { filter: brightness(1.3); }
 .side-panel { position: absolute; top: 164px; height: 900px; border: 1px solid #0084ff4d; border-radius: 6px; background: linear-gradient(#07315a66, #05233c4d); }
 .left-column { left: 26px; width: 373px; }
@@ -134,3 +139,41 @@ td:first-child { border-left: 1px solid #00a0ec66; border-radius: 5px 0 0 5px; }
 .modal-backdrop { position: absolute; inset: 0; background: #020914a8; display: grid; place-items: center; z-index: 20; }
 .modal { position: relative; width: 640px; padding: 25px; background: #07253ef5; border: 1px solid #288fbe; border-radius: 8px; box-shadow: 0 0 60px #02a5db22; }.modal h3 { margin-top: 25px; font-size: 24px; }.modal p { font-size: 18px; }.close-button { position: absolute; right: 12px; top: 7px; font-size: 26px; color: #bfefff; z-index: 1; }.overview-list { max-height: 550px; overflow: auto; }.overview-list button { width: 100%; text-align: left; border-bottom: 1px solid #2775a45c; padding: 12px; font-size: 16px; }.overview-list small { display: block; font-size: 12px; margin-top: 5px; color: #8db6d1; }
 ::-webkit-scrollbar { width: 4px; height: 4px; }::-webkit-scrollbar-thumb { background: #3888ad99; border-radius: 3px; }::-webkit-scrollbar-track { background: transparent; }
+
+/* Fit height independently, keeping the map corridor fluid across aspect ratios. */
+.dashboard { left: 0; top: 0; }
+.dashboard .topbar,.dashboard .top-line { width: 100%; }
+.dashboard .title-frame { left: calc(50% - 410px); }
+.dashboard h1 { left: 50%; transform: translateX(-50%) skew(-18deg) scaleY(.95); }
+.dashboard .top-light { left: calc(50% - 197px); }
+.dashboard .navigation { right: 33px; gap: 12px; }
+.dashboard .navigation button { flex: 1; min-width: 0; width: auto; }
+.dashboard .navigation .nav-texture { left: calc(50% - 24px); }
+.dashboard .right-column { left: auto; right: 16px; }
+.dashboard .metrics { right: 430px; }
+.dashboard .metric-card { flex: 1; min-width: 0; width: auto; }
+.dashboard .tracking-panel { right: 421px; width: auto; }
+.dashboard .map-legend { left: auto; right: 430px; }
+.dashboard .overview-native-plane { width: 100%; }
+.dashboard .overview-right-surface { left: auto; right: 16px; }
+.dashboard .overview-metric-shade { width: calc(100% - 860px); }
+.dashboard .announcement { width: calc(100% - 876px); }
+.dashboard .overview-events { left: auto; right: 28px; }
+.dashboard .overview-resources { left: auto; right: 34px; }
+.dashboard .overview-observation-heading { left: auto; right: 32px; }
+.dashboard .overview-observations,.dashboard .overview-observation-footer { left: auto; right: 45px; }
+.dashboard .overview-bottom-legend { left: calc(751px + var(--content-extra) * .3); }
+.dashboard .overview-fallback-metric.orange-metric { left: calc(617px + var(--content-extra) / 6) !important; }
+.dashboard .overview-fallback-metric:not(.orange-metric) { left: calc(967px + var(--content-extra) / 2) !important; }
+.dashboard .overview-fallback-metric:has(.lightning-symbol) { left: calc(1317px + var(--content-extra) * 5 / 6) !important; }
+
+/* Dialog titles occupy the full top edge, with a dedicated close-button area. */
+.header-actions .digital-human-button { width: 78px; height: 34px; padding: 0 12px; border: 1px solid #37b9eb; border-radius: 4px; color: #e6f8ff; background: #0a4369; font-size: 16px; cursor: pointer; }
+.digital-human-button:hover { background: #12658e; }
+.digital-human-button:focus-visible { outline: 2px solid #a4eaff; outline-offset: 2px; }
+.modal { padding: 86px 24px 24px; max-height: 950px; overflow: auto; }
+.modal > .panel-heading { position: absolute; left: 0; top: 0; width: 100% !important; height: 62px; border-bottom: 1px solid #2084b888; border-radius: 7px 7px 0 0; background: linear-gradient(90deg,#075184cc,#0a3458aa); }
+.modal > .panel-heading > .design-asset { display: none; }
+.modal > .panel-heading h2 { left: 24px; right: 62px; top: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.modal > .close-button { top: 10px; right: 10px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 4px; }
+.modal > .close-button:hover { background: #45b8ee22; }

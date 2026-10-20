@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DesignAsset from "./DesignAsset.vue";
-defineProps<{ names: Record<string, string> }>();
+withDefaults(defineProps<{ names: Record<string, string>; title?: string; suffix?: string }>(), { title: "预警释义", suffix: "预警" });
 defineEmits<{ select: [level: string] }>();
 const base = "/figma/";
 const decorations = [
@@ -24,9 +24,9 @@ const dots: Record<string, string> = {
       <DesignAsset style="position:absolute;left:0;top:0" :src="base + '318548fc-e156-450a-9e98-e63b00708e6d.svg'" :width="218" :height="42" />
       <DesignAsset v-for="d in decorations" :key="d.src" class="legend-decoration" :src="base + d.src" :width="d.width" :height="d.height" :style="{ right: d.right === undefined ? undefined : d.right + 'px', left: d.left === undefined ? undefined : d.left + 'px', top: d.top + 'px', maskImage: 'url(' + base + 'e07405c1-b261-4c1d-b29b-61867f317aba.svg)', maskPosition: d.mask }" />
       <DesignAsset class="legend-icon" :src="base + 'a151f372-66e5-4c84-91d8-88bc4b890d21.svg'" :width="31.0273" :height="31.9588" />
-      <h2>预警释义</h2>
+      <h2>{{ title }}</h2>
     </div>
-    <div class="legend-items"><button v-for="(name, key) in names" :key="key" @click="$emit('select', String(key))"><DesignAsset :src="base + dots[key]" :width="10" :height="10" /><span>{{ name }}预警</span></button></div>
+    <div class="legend-items"><button v-for="(name, key) in names" :key="key" @click="$emit('select', String(key))"><DesignAsset :src="base + dots[key]" :width="10" :height="10" /><span>{{ name }}{{ suffix }}</span></button></div>
   </div>
 </template>
 <style scoped>
