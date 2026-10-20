@@ -14,7 +14,7 @@ export default defineConfig({
   define: { CESIUM_BASE_URL: JSON.stringify("/cesium") },
   server: {
     proxy: {
-      "/digital-human-api": { target: process.env.LIVETALKING_PROXY_TARGET || "http://127.0.0.1:8010", changeOrigin: true, rewrite: (path) => path.replace(/^\/digital-human-api/, ""), timeout: 60000 },
+      "/digital-human-api": { target: process.env.LIVETALKING_PROXY_TARGET || "http://127.0.0.1:705", changeOrigin: true, rewrite: (path) => path.replace(/^\/digital-human-api/, ""), timeout: 60000 },
       ...Object.fromEntries(
       [
         "/api",

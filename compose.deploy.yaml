@@ -43,7 +43,7 @@ services:
       context: .
       dockerfile: docker/frontend.Dockerfile
     ports:
-      - "0.0.0.0:6003:80"
+      - "0.0.0.0:700:80"
     depends_on:
       - backend
     restart: unless-stopped
