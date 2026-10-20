@@ -8,6 +8,8 @@ import MetricCard from "./components/MetricCard.vue";
 import MapLegend from "./components/MapLegend.vue";
 import { designData, designTracking, type DashboardData, type Warning } from "./designData";
 const Scene = defineAsyncComponent(() => import("./components/Scene.vue"));
+const DigitalHuman = defineAsyncComponent(() => import("./components/DigitalHuman.vue"));
+const digitalHumanOpen = ref(false);
 const b = "/figma/";
 const mode = ref<"design" | "live">("design");
 const live = ref<DashboardData | null>(null);
@@ -95,6 +97,7 @@ onMounted(() => {
 onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.removeEventListener("resize", fit); window.removeEventListener("keydown", onKey); document.removeEventListener("fullscreenchange", fullscreenChanged); });
 </script>
 <template>
+  <DigitalHuman v-if="digitalHumanOpen" @close="digitalHumanOpen = false" />
   <div class="viewport">
     <div class="dashboard" :style="{ transform: 'translate(' + offset.x + 'px,' + offset.y + 'px) scale(' + scale + ')' }">
       <img class="park-background" :src="b + '67f75703-9c95-4967-b8f1-605ae1cf207d.png'" alt="" />
@@ -188,7 +191,7 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
           <div class="channel-grid"><article v-for="c in channels" :key="c.name"><span><i class="channel-icon"></i>{{ c.name }}</span><strong>{{ c.value }}<small>条</small></strong><small>成功率 {{ c.rate }}%</small></article></div>
         </section>
       </aside>
-      <div class="mode-control"><button @click="setMode">{{ mode === 'design' ? '设计对照' : '实时数据' }} ⌄</button><span v-if="mode === 'live' && error">{{ error }}</span><span v-else-if="mode === 'live'">每30秒更新</span></div>
+      <div class="mode-control"><button @click="digitalHumanOpen = true" aria-haspopup="dialog">数字人</button><button @click="setMode">{{ mode === 'design' ? '设计对照' : '实时数据' }} ⌄</button><span v-if="mode === 'live' && error">{{ error }}</span><span v-else-if="mode === 'live'">每30秒更新</span></div>
       <div v-if="station" class="station-popup"><button class="close-button" @click="station = ''" aria-label="关闭">×</button><h3>{{ station }}</h3><p>重点区域气象灾害监测点</p><button class="action-button" @click="overview = true; station = ''">查看相关预警</button></div>
       <div v-if="selected || overview" class="modal-backdrop" @click.self="selected = null; overview = false">
         <section class="modal" role="dialog" aria-modal="true" :aria-label="selected ? '预警详情' : '预警中心'"><button class="close-button" @click="selected = null; overview = false" aria-label="关闭">×</button><PanelHeading :title="selected ? '预警详情' : '预警中心'" :width="580" />

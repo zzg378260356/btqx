@@ -37,6 +37,8 @@ services:
     restart: unless-stopped
 
   frontend:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     build:
       context: .
       dockerfile: docker/frontend.Dockerfile
