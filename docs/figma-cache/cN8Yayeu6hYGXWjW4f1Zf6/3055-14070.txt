@@ -1,0 +1,91 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/9e7e3f71-2278-45a4-aab8-6088cd51f95a";
+const imgPolygon2 = `${assetPathPrefix}/9db00.svg`;
+const imgPolygon3 = `${assetPathPrefix}/0f3b2.svg`;
+const img001 = `${assetPathPrefix}/50af4.svg`;
+const img2 = `${assetPathPrefix}/cf060.svg`;
+const img3 = `${assetPathPrefix}/07c35.svg`;
+const img4 = `${assetPathPrefix}/dea44.svg`;
+const img5 = `${assetPathPrefix}/8fff4.svg`;
+const img6 = `${assetPathPrefix}/f3d26.svg`;
+
+export default function Component() {
+  return (
+    <div className="bg-[rgba(24,166,255,0.05)] relative size-full" data-node-id="3055:14070" data-name="环形图 图例">
+      <div className="absolute content-stretch flex gap-[4px] items-center left-[8px] top-[6px]" data-node-id="3055:14071" data-name="名称">
+        <div className="h-[6px] relative shrink-0 w-[5.196px]" data-node-id="3055:14072">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon2} />
+        </div>
+        <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[16px] whitespace-nowrap" data-node-id="3055:14073">
+          <p className="leading-[24px]">降水量</p>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex items-center left-[17px] top-[54px]" data-node-id="3055:14076" data-name="名称">
+        <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[14px] whitespace-nowrap" data-node-id="3055:14078">
+          <p className="leading-[24px]">较昨日 8.7mm</p>
+        </div>
+      </div>
+      <div className="-translate-y-1/2 absolute h-[10.444px] left-0 top-1/2 w-[1.5px]" data-node-id="3055:14075">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon3} />
+      </div>
+      <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] left-[17px] not-italic text-[#18a6ff] text-[14px] top-[42px] whitespace-nowrap" data-node-id="3055:14107">
+        <p className="leading-[24px]">26.4mm</p>
+      </div>
+      <div className="[word-break:break-word] absolute contents font-['Alibaba_PuHuiTi_2.0:45_Light'] leading-[0] left-[9px] not-italic text-[#cfe1ec] text-[9.935px] top-[82px] whitespace-nowrap" data-node-id="3055:14169">
+        <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[9px] top-[160.26px]" data-node-id="3055:14170">
+          <p className="leading-[17.032px]">02:00</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[9px] top-[148px]" data-node-id="3055:14174">
+          <p className="leading-[17.032px]">0</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[9px] top-[129px]" data-node-id="3055:14175">
+          <p className="leading-[17.032px]">16</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[9px] top-[110px]" data-node-id="3055:14176">
+          <p className="leading-[17.032px]">12</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[9px] top-[91px]" data-node-id="3055:14178">
+          <p className="leading-[17.032px]">18</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[47px] top-[160.26px]" data-node-id="3055:14172">
+          <p className="leading-[17.032px]">06:00</p>
+        </div>
+        <div className="-translate-y-1/2 absolute flex flex-col justify-center left-[85px] top-[160.26px]" data-node-id="3055:14173">
+          <p className="leading-[17.032px]">13:00</p>
+        </div>
+      </div>
+      <div className="absolute h-[67px] left-[81px] top-[81px] w-[4px]" data-node-id="3055:14193" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img001} />
+      </div>
+      <div className="absolute h-[67px] left-[92px] top-[81px] w-[4px]" data-node-id="3055:14212" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+      </div>
+      <div className="absolute h-[67px] left-[103px] top-[81px] w-[4px]" data-node-id="3055:14215" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img001} />
+      </div>
+      <div className="absolute h-[67px] left-[26px] top-[81px] w-[4px]" data-node-id="3055:14196" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+      </div>
+      <div className="absolute h-[67px] left-[37px] top-[81px] w-[4px]" data-node-id="3055:14199" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img4} />
+      </div>
+      <div className="absolute h-[67px] left-[48px] top-[81px] w-[4px]" data-node-id="3055:14202" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img5} />
+      </div>
+      <div className="absolute h-[67px] left-[59px] top-[81px] w-[4px]" data-node-id="3055:14205" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img6} />
+      </div>
+      <div className="absolute h-[67px] left-[70px] top-[81px] w-[4px]" data-node-id="3055:14208" data-name="柱状图-001">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

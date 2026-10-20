@@ -1,0 +1,2 @@
+Looks like you don't have edit access to this file. The file owner can share it with you and make you an editor. For more details on rate limits and access, refer to https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/
+Figma Debug UUID: 3d72573c-b0d5-40f0-9d2e-70ae1628c1a5

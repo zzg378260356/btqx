@@ -1,0 +1,155 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/076cc0ba-7b0a-4f06-8690-1d600bcc3361";
+const imgBg = `${assetPathPrefix}/f904f.svg`;
+const img = `${assetPathPrefix}/2d033.svg`;
+const imgUnion = `${assetPathPrefix}/fec21.svg`;
+const imgUnion1 = `${assetPathPrefix}/4916d.svg`;
+const imgUnion2 = `${assetPathPrefix}/d0b07.svg`;
+const imgUnion3 = `${assetPathPrefix}/7e822.svg`;
+const img1 = `${assetPathPrefix}/a6f48.svg`;
+const imgPolygon2 = `${assetPathPrefix}/9db00.svg`;
+const imgPolygon3 = `${assetPathPrefix}/4066b.svg`;
+const imgPolygon4 = `${assetPathPrefix}/4bbf2.svg`;
+const imgPolygon5 = `${assetPathPrefix}/d38df.svg`;
+const imgPolygon6 = `${assetPathPrefix}/1c7ff.svg`;
+const img2 = `${assetPathPrefix}/f21df.svg`;
+const img3 = `${assetPathPrefix}/36843.svg`;
+
+export default function Component() {
+  return (
+    <div className="contents relative size-full" data-node-id="3033:11131" data-name="数据模块">
+      <div className="absolute h-[42px] left-[26px] top-[calc(75%-1.5px)] w-[386px]" data-node-id="3033:11132" data-name="一级标题样式-03-h209">
+        <div className="absolute inset-[7.14%_0.01%_2.38%_0.01%]" data-node-id="I3033:11132;367:3313" data-name="bg">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBg} />
+        </div>
+        <div className="absolute inset-[97.62%_0.01%_2.38%_0.23%]" data-node-id="I3033:11132;367:3314" data-name="线">
+          <div className="absolute inset-[-0.5px_0]">
+            <img alt="" className="block max-w-none size-full" src={img} />
+          </div>
+        </div>
+        <div className="absolute bottom-px h-[18.034px] right-[0.03px] w-[44px]" data-node-id="I3033:11132;367:3315" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+        </div>
+        <div className="absolute bottom-px h-[1.023px] right-[10.09px] w-[33.944px]" data-node-id="I3033:11132;367:3316" data-name="Union">
+          <div className="absolute inset-[-293.37%_-5.89%_0_0]">
+            <img alt="" className="block max-w-none size-full" src={imgUnion1} />
+          </div>
+        </div>
+        <div className="absolute bottom-[3.77px] h-[22.113px] left-[10.6px] w-[10.992px]" data-node-id="I3033:11132;367:3317" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion2} />
+        </div>
+        <div className="absolute bottom-px h-[38px] left-[-0.01px] w-[16.691px]" data-node-id="I3033:11132;367:3318" data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion3} />
+        </div>
+        <div className="absolute bottom-[-2.43px] flex h-[44.864px] items-center justify-center left-[-7.91px] mix-blend-plus-lighter w-[37.927px]" data-node-id="I3033:11132;367:3319">
+          <div className="-scale-y-100 flex-none rotate-[20.68deg]">
+            <div className="h-[38.077px] relative w-[26.164px]" data-name="发光">
+              <div className="absolute inset-[-15.76%_-22.93%]">
+                <img alt="" className="block max-w-none size-full" src={img1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="-translate-y-1/2 absolute flex h-[32.336px] items-center justify-center left-[21.18px] top-[calc(50%+0.12px)] w-[81.507px]" data-node-id="I3033:11132;367:3320">
+          <div className="-skew-x-18 flex-none scale-y-95">
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:75_SemiBold'] justify-center leading-[0] not-italic relative text-[24px] text-shadow-[0px_3px_10px_rgba(0,0,0,0.5),0px_0px_6px_#0084ff] text-white whitespace-nowrap">
+              <p className="leading-[normal]">预警类型占比</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute contents left-[42.24px] top-[calc(75%+30.14px)]" data-node-id="3033:11133">
+        <div className="absolute content-stretch flex flex-col gap-[8px] h-[213px] items-start justify-center left-[calc(8.33%+46.59px)] overflow-clip top-[calc(75%+30.14px)] w-[175px]" data-node-id="3033:11134" data-name="图例">
+          <div className="bg-[rgba(24,166,255,0.05)] content-stretch flex items-center justify-between pl-[8px] pr-[6px] py-[6px] relative shrink-0 w-full" data-node-id="3033:11135" data-name="环形图 图例">
+            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I3033:11135;28:16352" data-name="名称">
+              <div className="h-[6px] relative shrink-0 w-[5.196px]" data-node-id="I3033:11135;28:16351">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon2} />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[18px] whitespace-nowrap" data-node-id="I3033:11135;28:16344">
+                <p className="leading-[24px]">暴雨</p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#18a6ff] text-[18px] whitespace-nowrap" data-node-id="I3033:11135;28:16346">
+              <p className="leading-[24px]">36条(40%)</p>
+            </div>
+            <div className="-translate-y-1/2 absolute h-[10.444px] left-0 top-1/2 w-[1.5px]" data-node-id="I3033:11135;28:16353">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon3} />
+            </div>
+          </div>
+          <div className="bg-[rgba(24,166,255,0.05)] content-stretch flex items-center justify-between pl-[8px] pr-[6px] py-[6px] relative shrink-0 w-full" data-node-id="3033:11136" data-name="环形图 图例">
+            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I3033:11136;28:16352" data-name="名称">
+              <div className="h-[6px] relative shrink-0 w-[5.196px]" data-node-id="I3033:11136;28:16351">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon4} />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[18px] whitespace-nowrap" data-node-id="I3033:11136;28:16344">
+                <p className="leading-[24px]">雷电</p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#606cff] text-[18px] whitespace-nowrap" data-node-id="I3033:11136;28:16346">
+              <p className="leading-[24px]">20条(23%)</p>
+            </div>
+            <div className="-translate-y-1/2 absolute h-[10.444px] left-0 top-1/2 w-[1.5px]" data-node-id="I3033:11136;28:16353">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon3} />
+            </div>
+          </div>
+          <div className="bg-[rgba(24,166,255,0.05)] content-stretch flex items-center justify-between pl-[8px] pr-[6px] py-[6px] relative shrink-0 w-full" data-node-id="3033:11137" data-name="环形图 图例">
+            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I3033:11137;28:16352" data-name="名称">
+              <div className="h-[6px] relative shrink-0 w-[5.196px]" data-node-id="I3033:11137;28:16351">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon5} />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[18px] whitespace-nowrap" data-node-id="I3033:11137;28:16344">
+                <p className="leading-[24px]">大风</p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#e698e7] text-[18px] whitespace-nowrap" data-node-id="I3033:11137;28:16346">
+              <p className="leading-[24px]">16条(18%)</p>
+            </div>
+            <div className="-translate-y-1/2 absolute h-[10.444px] left-0 top-1/2 w-[1.5px]" data-node-id="I3033:11137;28:16353">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon3} />
+            </div>
+          </div>
+          <div className="bg-[rgba(24,166,255,0.05)] content-stretch flex items-center justify-between pl-[8px] pr-[6px] py-[6px] relative shrink-0 w-full" data-node-id="3033:11138" data-name="环形图 图例">
+            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I3033:11138;28:16352" data-name="名称">
+              <div className="h-[6px] relative shrink-0 w-[5.196px]" data-node-id="I3033:11138;28:16351">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon6} />
+              </div>
+              <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center leading-[0] not-italic relative shrink-0 text-[#cfe1ec] text-[18px] whitespace-nowrap" data-node-id="I3033:11138;28:16344">
+                <p className="leading-[24px]">冰雹</p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] flex flex-col font-['Alibaba_PuHuiTi_2.0:55_Regular'] justify-center leading-[0] not-italic relative shrink-0 text-[#f71b1b] text-[18px] whitespace-nowrap" data-node-id="I3033:11138;28:16346">
+              <p className="leading-[24px]">10条(11%)</p>
+            </div>
+            <div className="-translate-y-1/2 absolute h-[10.444px] left-0 top-1/2 w-[1.5px]" data-node-id="I3033:11138;28:16353">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPolygon3} />
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-[173.255px] left-[42.24px] top-[calc(75%+50.26px)] w-[151.991px]" data-node-id="3033:11140" data-name="环形图装饰">
+          <div className="absolute inset-[-0.29%_0]">
+            <img alt="" className="block max-w-none size-full" src={img2} />
+          </div>
+        </div>
+        <div className="absolute left-[58px] size-[120px] top-[calc(83.33%-10px)]" data-node-id="3033:11150" data-name="环形图">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+        </div>
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-center justify-center leading-[0] left-[calc(4.17%+13px)] not-italic top-[calc(83.33%+29px)] whitespace-nowrap" data-node-id="3033:11157" data-name="danqian">
+          <div className="flex flex-col font-['Alibaba_PuHuiTi_2.0:65_Medium'] justify-center relative shrink-0 text-[28px] text-white" data-node-id="3033:11158">
+            <p className="leading-[24px]">62.3</p>
+          </div>
+          <div className="flex flex-col font-['Alibaba_PuHuiTi_2.0:45_Light'] justify-center relative shrink-0 text-[#cfe3ec] text-[12px]" data-node-id="3033:11159">
+            <p className="leading-[14px]">中风险</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

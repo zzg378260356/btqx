@@ -1,0 +1,901 @@
+<frame id="3033:10815" name="Group 1321315401" x="2216" y="1152" width="1925" height="1080">
+  <frame id="3033:10816" name="模版样式-03-h209_1920*1080" x="2221" y="1152" width="1920" height="1080">
+    <rounded-rectangle id="3033:10817" name="greedyd9629_Industrial_park_in_digital_illustration_style_aeria_fe29a9fd-a944-4502-b970-fc5d803b9ca2 1" x="-46.697750091552734" y="-4" width="2027.5916748046875" height="1136.342529296875" />
+    <rounded-rectangle id="3033:10818" name="Rectangle 34624635" x="-6.58831787109375" y="-17.780517578125" width="1933.1766357421875" height="1115.56103515625" />
+    <boolean-operation id="3033:10819" name="遮罩" x="-377.880859375" y="-290.56298828125" width="2675.76220703125" height="1662.126220703125">
+      <rounded-rectangle id="3033:10820" name="Rectangle 34624149" x="-377.88085937499994" y="-290.56298828125" width="2675.76220703125" height="1662.1260986328125" />
+      <rounded-rectangle id="3033:10821" name="Rectangle 34624150" x="417.5703125" y="215.722900390625" width="1084.8603515625" height="739.210693359375" />
+    </boolean-operation>
+    <frame id="3033:10822" name="Group 1321315396" x="0" y="90" width="1920" height="990">
+      <frame id="3033:10823" name="内容" x="0" y="90" width="1920" height="990">
+        <rounded-rectangle id="3033:10824" name="S-209" x="26" y="74" width="386" height="900" />
+        <frame id="3055:14070" name="环形图 图例" x="34" y="336" width="119" height="170">
+          <frame id="3055:14071" name="名称" x="8" y="6" width="57.19615173339844" height="24">
+            <vector id="3055:14072" name="Polygon 2" x="0" y="9" width="5.196152210235596" height="6" />
+            <text id="3055:14073" name="降水量" x="9.196151733398438" y="0" width="48" height="24" />
+          </frame>
+          <frame id="3055:14076" name="名称" x="17" y="54" width="90" height="24">
+            <text id="3055:14078" name="较昨日 8.7mm" x="0" y="0" width="90" height="24" />
+          </frame>
+          <vector id="3055:14075" name="Polygon 2" x="0" y="79.7779541015625" width="1.5" height="10.444091796875" />
+          <text id="3055:14107" name="26.4mm" x="17" y="30" width="55" height="24" />
+          <frame id="3055:14169" name="Group 1321315439" x="9" y="82" width="102" height="87.258056640625">
+            <text id="3055:14170" name="02:00" x="9" y="151.258056640625" width="26" height="18" />
+            <text id="3055:14174" name="0" x="9" y="139" width="6" height="18" />
+            <text id="3055:14175" name="16" x="9" y="120" width="12" height="18" />
+            <text id="3055:14176" name="12" x="9" y="101" width="12" height="18" />
+            <text id="3055:14178" name="18" x="9" y="82" width="12" height="18" />
+            <text id="3055:14172" name="06:00" x="47" y="151.258056640625" width="26" height="18" />
+            <text id="3055:14173" name="13:00" x="85" y="151.258056640625" width="26" height="18" />
+          </frame>
+          <frame id="3055:14193" name="柱状图-001" x="81" y="81" width="4" height="67">
+            <vector id="3055:14194" name="Union" x="0" y="23" width="4" height="3" />
+            <vector id="3055:14195" name="Union" x="0" y="26" width="4" height="41" />
+          </frame>
+          <frame id="3055:14212" name="柱状图-001" x="92" y="81" width="4" height="67">
+            <vector id="3055:14213" name="Union" x="0" y="46" width="4" height="3" />
+            <vector id="3055:14214" name="Union" x="0" y="49" width="4" height="18" />
+          </frame>
+          <frame id="3055:14215" name="柱状图-001" x="103" y="81" width="4" height="67">
+            <vector id="3055:14216" name="Union" x="0" y="23" width="4" height="3" />
+            <vector id="3055:14217" name="Union" x="0" y="26" width="4" height="41" />
+          </frame>
+          <frame id="3055:14196" name="柱状图-001" x="26" y="81" width="4" height="67">
+            <vector id="3055:14197" name="Union" x="0" y="39" width="4" height="3" />
+            <vector id="3055:14198" name="Union" x="0" y="42" width="4" height="25" />
+          </frame>
+          <frame id="3055:14199" name="柱状图-001" x="37" y="81" width="4" height="67">
+            <vector id="3055:14200" name="Union" x="0" y="8" width="4" height="3" />
+            <vector id="3055:14201" name="Union" x="0" y="11" width="4" height="56" />
+          </frame>
+          <frame id="3055:14202" name="柱状图-001" x="48" y="81" width="4" height="67">
+            <vector id="3055:14203" name="Union" x="0" y="49" width="4" height="3" />
+            <vector id="3055:14204" name="Union" x="0" y="52" width="4" height="15" />
+          </frame>
+          <frame id="3055:14205" name="柱状图-001" x="59" y="81" width="4" height="67">
+            <vector id="3055:14206" name="Union" x="0" y="29" width="4" height="3" />
+            <vector id="3055:14207" name="Union" x="0" y="32" width="4" height="35" />
+          </frame>
+          <frame id="3055:14208" name="柱状图-001" x="70" y="81" width="4" height="67">
+            <vector id="3055:14209" name="Union" x="0" y="39" width="4" height="3" />
+            <vector id="3055:14210" name="Union" x="0" y="42" width="4" height="25" />
+          </frame>
+        </frame>
+        <frame id="3055:14109" name="环形图 图例" x="160" y="336" width="119" height="170">
+          <frame id="3055:14110" name="名称" x="8" y="6" width="72.19615173339844" height="24">
+            <vector id="3055:14111" name="Polygon 2" x="0" y="9" width="5.196152210235596" height="6" />
+            <text id="3055:14112" name="风向风速" x="9.196151733398438" y="0" width="63" height="24" />
+          </frame>
+          <frame id="3055:14113" name="名称" x="17" y="54" width="42" height="24">
+            <text id="3055:14114" name="东南风" x="0" y="0" width="42" height="24" />
+          </frame>
+          <vector id="3055:14115" name="Polygon 2" x="0" y="79.7779541015625" width="1.5" height="10.444091796875" />
+          <text id="3055:14116" name="2.8m/s" x="17" y="30" width="47" height="24" />
+          <rounded-rectangle id="3055:14218" name="huaban-6722954060 1" x="20" y="86" width="72" height="72" />
+        </frame>
+        <frame id="3055:14117" name="环形图 图例" x="286" y="336" width="119" height="170">
+          <frame id="3055:14118" name="名称" x="8" y="6" width="41.19615173339844" height="24">
+            <vector id="3055:14119" name="Polygon 2" x="0" y="9" width="5.196152210235596" height="6" />
+            <text id="3055:14120" name="气温" x="9.196151733398438" y="0" width="32" height="24" />
+          </frame>
+          <frame id="3055:14121" name="名称" x="17" y="54" width="71" height="24">
+            <text id="3055:14122" name="较昨日 1.0" x="0" y="0" width="63" height="24" />
+            <text id="3055:14127" name="o" x="64" y="-6" width="4" height="24" />
+          </frame>
+          <text id="3055:14128" name="C" x="84" y="54" width="9" height="24" />
+          <frame id="3055:14134" name="Group 1321315435" x="8" y="78" width="19.61279296875" height="22.258056640625">
+            <text id="3055:14131" name="10" x="8.000000000000227" y="82.25804471969604" width="12" height="18" />
+            <text id="3055:14132" name="o" x="19.48388671875" y="78" width="3" height="18" />
+            <text id="3055:14133" name="C" x="21.61279296875" y="82.258056640625" width="6" height="18" />
+          </frame>
+          <frame id="3055:14135" name="Group 1321315436" x="8" y="96" width="13.61279296875" height="22.258056640625">
+            <text id="3055:14136" name="6" x="8.000000000000227" y="100.25804471969604" width="6" height="18" />
+            <text id="3055:14137" name="o" x="13.48388671875" y="96" width="3" height="18" />
+            <text id="3055:14138" name="C" x="15.61279296875" y="100.258056640625" width="6" height="18" />
+          </frame>
+          <frame id="3055:14140" name="Group 1321315437" x="8" y="114" width="14.61279296875" height="22.258056640625">
+            <text id="3055:14141" name="2" x="8.000000000000227" y="118.25804471969604" width="6" height="18" />
+            <text id="3055:14142" name="o" x="14.48388671875" y="114" width="3" height="18" />
+            <text id="3055:14143" name="C" x="16.61279296875" y="118.258056640625" width="6" height="18" />
+          </frame>
+          <frame id="3055:14145" name="Group 1321315438" x="5" y="132" width="17.61279296875" height="22.258056640625">
+            <text id="3055:14146" name="-6" x="5.000000000000227" y="136.25804471969604" width="10" height="18" />
+            <text id="3055:14147" name="o" x="14.48388671875" y="132" width="3" height="18" />
+            <text id="3055:14148" name="C" x="16.61279296875" y="136.258056640625" width="6" height="18" />
+          </frame>
+          <frame id="3055:14150" name="Group 1321315439" x="9" y="151.258056640625" width="26" height="18">
+            <text id="3055:14151" name="08:00" x="9" y="151.258056640625" width="26" height="18" />
+          </frame>
+          <frame id="3055:14154" name="Group 1321315440" x="44" y="151.258056640625" width="61" height="18">
+            <text id="3055:14155" name="18:00" x="44" y="151.258056640625" width="26" height="18" />
+            <text id="3055:14157" name="19:00" x="79" y="151.258056640625" width="26" height="18" />
+          </frame>
+          <vector id="3055:14123" name="Polygon 2" x="0" y="79.7779541015625" width="1.5" height="10.444091796875" />
+          <text id="3055:14124" name="+7.0" x="17" y="30" width="26" height="24" />
+          <text id="3055:14126" name="c" x="48" y="30" width="7" height="24" />
+          <text id="3055:14125" name="o" x="44" y="26" width="4" height="48" />
+          <vector id="3055:14163" name="Vector 884" x="105" y="100" width="78" height="18.501150131225586" />
+          <ellipse id="3055:14165" name="Ellipse 2492" x="32" y="102" width="6" height="6" />
+          <ellipse id="3055:14167" name="Ellipse 2493" x="47" y="103" width="6" height="6" />
+          <ellipse id="3055:14168" name="Ellipse 2494" x="88" y="104" width="6" height="6" />
+        </frame>
+        <rounded-rectangle id="3033:10825" name="S-209" x="1518" y="74" width="386" height="900" />
+        <frame id="3055:13862" name="Frame 1321315274" x="1540" y="777" width="335" height="158.794189453125">
+          <frame id="3055:13863" name="列表-01" x="0" y="0" width="335" height="20.357589721679688">
+            <frame id="3055:13864" name="Frame 11131" x="5.571725368499756" y="0" width="68.2536392211914" height="20.357589721679688">
+              <text id="3055:13865" name="设备类型" x="0" y="4.178794860839844" width="44" height="12" />
+            </frame>
+            <frame id="3055:13866" name="Frame 11134" x="97" y="0" width="71.20096588134766" height="20.357589721679688">
+              <text id="3055:13867" name="实时值" x="0" y="4.178794860839844" width="33" height="12" />
+            </frame>
+            <frame id="3055:13868" name="Frame 11133" x="173" y="0" width="71.20097351074219" height="20.357589721679688">
+              <text id="3055:13869" name="1小时均值" x="0" y="4.178794860839844" width="51" height="12" />
+            </frame>
+            <frame id="3055:13870" name="Frame 11132" x="264" y="0" width="71.20097351074219" height="20.357589721679688">
+              <text id="3055:13871" name="状态" x="0" y="4.178794860839844" width="22" height="12" />
+            </frame>
+          </frame>
+          <frame id="3055:13958" name="列表-01" x="0" y="25.9293155670166" width="335" height="29.251558303833008">
+            <frame id="3055:13959" name="Frame 11131" x="5.571725368499756" y="2.785862684249878" width="68.2536392211914" height="23.679832458496094">
+              <text id="3055:13960" name="综合楼" x="0" y="5.839916229248047" width="38" height="12" />
+            </frame>
+            <frame id="3055:13961" name="Frame 11134" x="92" y="2.785888671875" width="81.1226577758789" height="23.679832458496094">
+              <text id="3055:13962" name="800" x="0" y="5.839916229248047" width="45" height="12" />
+            </frame>
+            <frame id="3055:13963" name="Frame 11133" x="172.519775390625" y="2.785888671875" width="85" height="23.679832458496094">
+              <text id="3055:13964" name="600" x="0" y="5.839916229248047" width="49" height="12" />
+            </frame>
+            <frame id="3055:13965" name="Frame 11132" x="264" y="3.0706787109375" width="69" height="23">
+              <text id="3055:13966" name="80" x="0" y="5.5" width="25" height="12" />
+            </frame>
+            <vector id="3055:13967" name="射灯" x="174.5704345703125" y="-37.18388748168945" width="87.7336525120927" height="87.7336525120927" />
+            <frame id="3055:13968" name="2" x="179.45310974121094" y="-0.21492494642734528" width="155.546875" height="42.91604232788086" />
+          </frame>
+          <frame id="3055:13973" name="列表-01" x="0" y="60.752601623535156" width="335" height="29.251558303833008">
+            <frame id="3055:13974" name="Frame 11131" x="5.571725368499756" y="2.785862684249878" width="68.2536392211914" height="23.679832458496094">
+              <text id="3055:13975" name="综合楼" x="0" y="5.839916229248047" width="38" height="12" />
+            </frame>
+            <frame id="3055:13976" name="Frame 11134" x="91" y="2.785888671875" width="82.41510772705078" height="23.679832458496094">
+              <text id="3055:13977" name="800" x="0" y="5.839916229248047" width="38" height="12" />
+            </frame>
+            <frame id="3055:13978" name="Frame 11133" x="172.812255859375" y="2.785888671875" width="82.41510009765625" height="23.679832458496094">
+              <text id="3055:13979" name="600" x="0" y="5.839916229248047" width="50" height="12" />
+            </frame>
+            <frame id="3055:13980" name="Frame 11132" x="262" y="3.247314453125" width="70" height="23">
+              <text id="3055:13981" name="80" x="0" y="5.5" width="25" height="12" />
+            </frame>
+            <vector id="3055:13982" name="射灯" x="174.5704345703125" y="-37.18388748168945" width="87.7336525120927" height="87.7336525120927" />
+            <frame id="3055:13983" name="2" x="179.45310974121094" y="-0.21492494642734528" width="155.546875" height="42.91604232788086" />
+          </frame>
+          <frame id="3055:13934" name="列表-01" x="0" y="95.57588195800781" width="335" height="29.251558303833008">
+            <frame id="3055:13935" name="Frame 11131" x="5.571725368499756" y="2.785862684249878" width="68.2536392211914" height="23.679832458496094">
+              <text id="3055:13936" name="综合楼" x="0" y="5.839916229248047" width="50" height="12" />
+            </frame>
+            <frame id="3055:13937" name="Frame 11134" x="92" y="2.785888671875" width="84.1226577758789" height="23.679832458496094">
+              <text id="3055:13938" name="800" x="0" y="5.83984375" width="26" height="12" />
+              <text id="3055:13949" name="o" x="27.39293098449707" y="0.3399162292480469" width="4" height="23" />
+              <text id="3055:13950" name="C" x="32.78586196899414" y="5.839916229248047" width="8" height="12" />
+            </frame>
+            <frame id="3055:13954" name="Frame 11135" x="172.519775390625" y="2.785888671875" width="79" height="23.679832458496094">
+              <text id="3055:13955" name="800" x="0" y="5.839916229248047" width="26" height="12" />
+              <text id="3055:13956" name="o" x="27.39293098449707" y="0.3399162292480469" width="4" height="23" />
+              <text id="3055:13957" name="C" x="32.78586196899414" y="5.839916229248047" width="8" height="12" />
+            </frame>
+            <frame id="3055:13941" name="Frame 11132" x="264" y="2.424072265625" width="68" height="24">
+              <text id="3055:13942" name="正常" x="0" y="6" width="25" height="12" />
+            </frame>
+            <vector id="3055:13943" name="射灯" x="174.5704345703125" y="-37.18388748168945" width="87.7336525120927" height="87.7336525120927" />
+            <frame id="3055:13944" name="2" x="179.45310974121094" y="-0.21492494642734528" width="155.546875" height="42.91604232788086" />
+          </frame>
+        </frame>
+        <text id="3055:13989" name="更新时间： 07-04 20:20" x="1540" y="928" width="137" height="12" />
+        <frame id="3055:13827" name="Frame 427319069" x="1762" y="917" width="113" height="34">
+          <text id="3055:13828" name="查看详情" x="28" y="7" width="57" height="20" />
+        </frame>
+        <frame id="3055:13988" name="Frame 11131" x="1545" y="932" width="68.2536392211914" height="23.679832458496094" />
+        <frame id="3033:10826" name="数据模块" x="1527" y="733" width="361" height="42">
+          <instance id="3033:10827" name="一级标题样式-03-h209" x="1527" y="733" width="361" height="42" />
+        </frame>
+        <frame id="3035:12199" name="数据模块" x="1510" y="72" width="410" height="566">
+          <instance id="3035:12200" name="一级标题样式-03-h209" x="1510" y="72" width="361" height="42" />
+          <instance id="3035:12369" name="一级标题样式-03-h209" x="1527" y="347" width="361" height="42" />
+          <instance id="3035:12435" name="一级标题样式-03-h209" x="1527" y="596" width="361" height="42" />
+          <frame id="3035:12201" name="Group 1321315115" x="1538" y="127" width="382" height="96">
+            <frame id="3035:12202" name="Frame 427319062" x="1538" y="127" width="154" height="95.86024475097656">
+              <frame id="3035:12203" name="Group 1321315400" x="12" y="6.430122375488281" width="122" height="83">
+                <frame id="3035:12204" name="Frame 427319064" x="12" y="6.430122375488281" width="122" height="31">
+                  <vector id="3035:12205" name="Rectangle 34624204" x="6" y="7" width="2" height="12" hidden="true" />
+                  <frame id="3035:12206" name="Frame 1321315504" x="4" y="4.5" width="22" height="22">
+                    <instance id="3035:12207" name="能源_蒸汽" x="0" y="0" width="22" height="22" />
+                  </frame>
+                  <text id="3035:12208" name="短信" x="30" y="9.5" width="32" height="12" />
+                </frame>
+                <frame id="3035:12209" name="Frame 11212" x="12" y="45.43012237548828" width="77" height="18">
+                  <text id="3035:12210" name="26,830条" x="0" y="0" width="77" height="18" />
+                </frame>
+                <text id="3035:12211" name="成功率 98.6%" x="12" y="71.43012237548828" width="74" height="18" />
+              </frame>
+            </frame>
+            <frame id="3035:12212" name="Frame 427319066" x="1656" y="127" width="154" height="95.86024475097656">
+              <frame id="3035:12213" name="Group 1321315400" x="12" y="6.430122375488281" width="122" height="83">
+                <frame id="3035:12214" name="Frame 427319064" x="12" y="6.430122375488281" width="122" height="31">
+                  <vector id="3035:12215" name="Rectangle 34624204" x="6" y="7" width="2" height="12" hidden="true" />
+                  <frame id="3035:12216" name="Frame 1321315504" x="4" y="4.5" width="22" height="22">
+                    <instance id="3035:12217" name="能源_蒸汽" x="0" y="0" width="22" height="22" />
+                  </frame>
+                  <text id="3035:12218" name="微信" x="30" y="9.5" width="32" height="12" />
+                </frame>
+                <frame id="3035:12219" name="Frame 11212" x="12" y="45.43012237548828" width="77" height="18">
+                  <text id="3035:12220" name="18,450条" x="0" y="0" width="77" height="18" />
+                </frame>
+                <text id="3035:12221" name="成功率 97.3%" x="12" y="71.43012237548828" width="72" height="18" />
+              </frame>
+            </frame>
+            <frame id="3035:12222" name="Frame 427319064" x="1729.9996337890625" y="127.16591763496399" width="154" height="95.8340835571289" />
+            <frame id="3035:12223" name="Frame 427319067" x="1766" y="127" width="154" height="95.86024475097656">
+              <frame id="3035:12224" name="Group 1321315400" x="12" y="6.430122375488281" width="122" height="83">
+                <frame id="3035:12225" name="Frame 427319064" x="12" y="6.430122375488281" width="122" height="31">
+                  <vector id="3035:12226" name="Rectangle 34624204" x="6" y="7" width="2" height="12" hidden="true" />
+                  <frame id="3035:12227" name="Frame 1321315504" x="4" y="4.5" width="22" height="22">
+                    <instance id="3035:12228" name="能源_蒸汽" x="0" y="0" width="22" height="22" />
+                  </frame>
+                  <text id="3035:12229" name="应急广播" x="30" y="9.5" width="63" height="12" />
+                </frame>
+                <frame id="3035:12230" name="Frame 11212" x="12" y="45.43012237548828" width="47" height="18">
+                  <text id="3035:12231" name="562条" x="0" y="0" width="47" height="18" />
+                </frame>
+                <text id="3035:12232" name="成功率 99.1%" x="12" y="71.43012237548828" width="72" height="18" />
+              </frame>
+            </frame>
+            <frame id="3035:12233" name="底座" x="1613.602294921875" y="206.34786224365234" width="176.72688506257055" height="180.88678710178328" hidden="true">
+              <frame id="3035:12234" name="Group 1321315391" x="1662.9195552680653" y="247.8071590835641" width="100.61138304605856" height="86.42494881762877" />
+              <ellipse id="3035:12238" name="Ellipse 2476" x="1676.7279043388698" y="244.92601571336309" width="71.05639479630736" height="59.6020438335629" />
+              <frame id="3035:12239" name="Group 1321315392" x="1671.8098157985717" y="237.55684656487983" width="73.91474117895814" height="63.0848653742662" />
+              <ellipse id="3035:12246" name="Ellipse 2488" x="1676.8173840262027" y="260.22308600896076" width="83.24216582871395" height="69.63086963062528" />
+              <ellipse id="3035:12247" name="Ellipse 2487" x="1649.807983358996" y="239.43453646401395" width="120.13023451834397" height="105.88705790160111" />
+              <frame id="3035:12248" name="Group 1321315395" x="1639.7320553438715" y="255.63460286219745" width="150.59362835279808" height="131.5930506449904" />
+              <frame id="3035:12254" name="Group 1321315330" x="1744.2514635919151" y="257.2375525705047" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12257" name="Group 1321315394" x="1697.4649646973203" y="272.8612745444061" width="4.952578539741353" height="5.393360251730201" />
+              <frame id="3035:12260" name="Group 1321315331" x="1697.5011009543523" y="194.67643786296617" width="5.333014785564956" height="5.807655734836544" />
+              <frame id="3035:12263" name="Group 1321315393" x="1657.9772940777984" y="244.69413840993093" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12266" name="Group 1321315332" x="1762.9324997908855" y="199.04498431193542" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12269" name="Group 1321315333" x="1696.8060315313187" y="227.6010506726641" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12272" name="Group 1321315329" x="1744.8414299423462" y="228.88306699902842" width="6.338403709188242" height="6.902524694139402" />
+              <vector id="3035:12275" name="发光" x="1682.4306642583715" y="257.5874901285024" width="76.69473704104348" height="68.3291372030701" />
+              <instance id="3035:12276" name="能源_天然气" x="1674.004519033248" y="168.37023661358143" width="60.00000997309053" height="65.34142414553821" />
+            </frame>
+          </frame>
+          <frame id="3035:12277" name="Group 1321315116" x="1538" y="235" width="382" height="96">
+            <frame id="3035:12278" name="Frame 427319062" x="1538" y="235" width="154" height="95.86024475097656">
+              <frame id="3035:12279" name="Group 1321315400" x="12" y="6.430122375488281" width="122" height="83">
+                <frame id="3035:12280" name="Frame 427319064" x="12" y="6.430122375488281" width="122" height="31">
+                  <vector id="3035:12281" name="Rectangle 34624204" x="6" y="7" width="2" height="12" hidden="true" />
+                  <frame id="3035:12282" name="Frame 1321315504" x="4" y="4.5" width="22" height="22">
+                    <instance id="3035:12283" name="能源_蒸汽" x="0" y="0" width="22" height="22" />
+                  </frame>
+                  <text id="3035:12284" name="手机APP" x="30" y="9.5" width="62" height="12" />
+                </frame>
+                <frame id="3035:12285" name="Frame 11212" x="12" y="45.43012237548828" width="76" height="18">
+                  <text id="3035:12286" name="15,720条" x="0" y="0" width="76" height="18" />
+                </frame>
+                <text id="3035:12287" name="成功率 98.6%" x="12" y="71.43012237548828" width="74" height="18" />
+              </frame>
+            </frame>
+            <frame id="3035:12288" name="Frame 427319066" x="1656" y="235" width="154" height="95.86024475097656">
+              <frame id="3035:12289" name="Group 1321315400" x="12" y="6.430122375488281" width="122" height="83">
+                <frame id="3035:12290" name="Frame 427319064" x="12" y="6.430122375488281" width="122" height="31">
+                  <vector id="3035:12291" name="Rectangle 34624204" x="6" y="7" width="2" height="12" hidden="true" />
+                  <frame id="3035:12292" name="Frame 1321315504" x="4" y="4.5" width="22" height="22">
+                    <instance id="3035:12293" name="能源_蒸汽" x="0" y="0" width="22" height="22" />
+                  </frame>
+                  <text id="3035:12294" name="电子屏" x="30" y="9.5" width="48" height="12" />
+                </frame>
+                <frame id="3035:12295" name="Frame 11212" x="12" y="45.43012237548828" width="47" height="18">
+                  <text id="3035:12296" name="236条" x="0" y="0" width="47" height="18" />
+                </frame>
+                <text id="3035:12297" name="成功率 97.3%" x="12" y="71.43012237548828" width="72" height="18" />
+              </frame>
+            </frame>
+            <frame id="3035:12298" name="Frame 427319064" x="1729.9996337890625" y="235.165917634964" width="154" height="95.8340835571289" />
+            <frame id="3035:12299" name="Frame 427319067" x="1766" y="235" width="154" height="95.86024475097656">
+              <frame id="3035:12300" name="Group 1321315400" x="12" y="6.430122375488281" width="122" height="83">
+                <frame id="3035:12301" name="Frame 427319064" x="12" y="6.430122375488281" width="122" height="31">
+                  <vector id="3035:12302" name="Rectangle 34624204" x="6" y="7" width="2" height="12" hidden="true" />
+                  <frame id="3035:12303" name="Frame 1321315504" x="4" y="4.5" width="22" height="22">
+                    <instance id="3035:12304" name="能源_蒸汽" x="0" y="0" width="22" height="22" />
+                  </frame>
+                  <text id="3035:12305" name="传真" x="30" y="9.5" width="32" height="12" />
+                </frame>
+                <frame id="3035:12306" name="Frame 11212" x="12" y="45.43012237548828" width="36" height="18">
+                  <text id="3035:12307" name="85条" x="0" y="0" width="36" height="18" />
+                </frame>
+                <text id="3035:12308" name="成功率 96.1%" x="12" y="71.43012237548828" width="72" height="18" />
+              </frame>
+            </frame>
+            <frame id="3035:12309" name="底座" x="1613.6025466918945" y="314.347900390625" width="176.72688506257055" height="180.88678710178328" hidden="true">
+              <frame id="3035:12310" name="Group 1321315391" x="1662.919566629568" y="355.8070158459309" width="100.61138304605856" height="86.42494881762877" />
+              <ellipse id="3035:12314" name="Ellipse 2476" x="1676.7279164950835" y="352.92593488922876" width="71.05639479630736" height="59.6020438335629" />
+              <frame id="3035:12315" name="Group 1321315392" x="1671.8098287747769" y="345.5567023120052" width="73.91474592437498" height="63.08489869107507" />
+              <ellipse id="3035:12322" name="Ellipse 2488" x="1676.8173926088095" y="368.22299844412964" width="83.24216582871395" height="69.63086963062528" />
+              <ellipse id="3035:12323" name="Ellipse 2487" x="1649.8079947204988" y="347.43439322638073" width="120.13023451834397" height="105.88705790160111" />
+              <frame id="3035:12324" name="Group 1321315395" x="1639.7320673731797" y="363.6344592046827" width="150.59362835279808" height="131.5930506449904" />
+              <frame id="3035:12330" name="Group 1321315330" x="1744.251474158707" y="365.2373469193726" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12333" name="Group 1321315394" x="1697.464976853534" y="380.8611937202718" width="4.952578539741353" height="5.393360251730201" />
+              <frame id="3035:12336" name="Group 1321315331" x="1697.5011107011528" y="302.6762956405744" width="5.333014785564956" height="5.807655734836544" />
+              <frame id="3035:12339" name="Group 1321315393" x="1657.9773054393013" y="352.6939951722977" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12342" name="Group 1321315332" x="1762.9325159964956" y="307.04483802857794" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12345" name="Group 1321315333" x="1696.806044507524" y="335.60090641978945" width="7.066977411398057" height="7.6959418115561675" />
+              <frame id="3035:12348" name="Group 1321315329" x="1744.8414396891465" y="336.8829247766366" width="6.338403709188242" height="6.902524694139402" />
+              <vector id="3035:12351" name="发光" x="1682.4306764145852" y="365.58740930436807" width="76.69473704104348" height="68.3291372030701" />
+              <instance id="3035:12352" name="能源_天然气" x="1674.0045290463404" y="276.3700948934814" width="60.00000997309053" height="65.34142414553821" />
+            </frame>
+          </frame>
+          <frame id="3035:12379" name="列表-01" x="1530" y="396" width="362" height="40">
+            <frame id="3035:12380" name="Frame 11131" x="0" y="0" width="98" height="40">
+              <frame id="3035:12412" name="Frame 1321315428" x="8" y="4" width="338" height="32">
+                <text id="3035:12381" name="橙色暴雨预警-东河区" x="37" y="0" width="132" height="32" />
+                <instance id="3055:13996" name="表-水" x="5" y="4" width="25" height="24" />
+                <text id="3035:12404" name="07-04 20:15" x="249" y="7" width="79" height="16" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3035:12413" name="列表-01" x="1530" y="444" width="362" height="40">
+          <frame id="3035:12414" name="Frame 11131" x="0" y="0" width="98" height="40">
+            <frame id="3035:12415" name="Frame 1321315428" x="8" y="4" width="338" height="32">
+              <text id="3035:12416" name="雷电蓝色预警-青山区" x="37" y="0" width="132" height="32" />
+              <instance id="3055:13999" name="表-电" x="4" y="5" width="24" height="24" />
+              <text id="3035:12418" name="07-04 20:15" x="249" y="7" width="79" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3035:12421" name="列表-01" x="1530" y="492" width="362" height="40">
+          <frame id="3035:12422" name="Frame 11131" x="0" y="0" width="98" height="40">
+            <frame id="3035:12423" name="Frame 1321315428" x="8" y="4" width="338" height="32">
+              <text id="3035:12424" name="大风蓝色预警-昆都伦区" x="37" y="8" width="144" height="16" />
+              <instance id="3055:14004" name="表-蒸汽" x="3" y="4" width="25" height="24" />
+              <text id="3035:12426" name="07-04 20:15" x="249" y="7" width="79" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3035:12428" name="列表-01" x="1530" y="540" width="362" height="40">
+          <frame id="3035:12429" name="Frame 11131" x="0" y="0" width="98" height="40">
+            <frame id="3035:12430" name="Frame 1321315428" x="8" y="4" width="338" height="32">
+              <text id="3035:12431" name="冰雹橙色预警-石拐区" x="37" y="0" width="132" height="32" />
+              <instance id="3055:14053" name="Group 1321315434" x="4" y="4" width="24" height="24" />
+              <text id="3035:12433" name="07-04 20:15" x="249" y="7" width="79" height="16" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:11074" name="数据模块" x="32" y="344" width="363" height="285" hidden="true">
+          <instance id="3033:11075" name="一级标题样式-03-h209" x="34" y="344" width="361" height="42" />
+          <frame id="3033:11076" name="数据列表" x="32" y="397" width="363" height="232">
+            <instance id="3033:11077" name="列表数据" x="12" y="0" width="339" height="40" />
+            <instance id="3033:11078" name="列表数据" x="12" y="48" width="339" height="40" />
+            <instance id="3033:11079" name="列表数据" x="12" y="96" width="339" height="40" />
+            <instance id="3033:11080" name="列表数据" x="12" y="144" width="339" height="40" />
+            <instance id="3033:11081" name="列表数据" x="12" y="192" width="339" height="40" />
+          </frame>
+        </frame>
+        <frame id="3033:11082" name="数据模块" x="26" y="72" width="386" height="42">
+          <instance id="3033:11083" name="一级标题样式-03-h209" x="26" y="72" width="386" height="42" />
+        </frame>
+        <frame id="3035:12166" name="数据模块" x="26" y="287" width="386" height="42">
+          <instance id="3035:12167" name="一级标题样式-03-h209" x="26" y="287" width="386" height="42" />
+        </frame>
+        <frame id="3034:12146" name="Frame 1321315507" x="26" y="121" width="373" height="152">
+          <frame id="3034:12071" name="数据列表" x="0" y="0" width="373" height="30">
+            <frame id="3034:12103" name="列表数据" x="10.85140609741211" y="0" width="350" height="28">
+              <text id="3034:12104" name="1.高风险" x="6.200803279876709" y="4.5" width="79" height="19" />
+              <instance id="3034:12105" name="条形图-01" x="88.30120849609375" y="11" width="192" height="6" />
+              <text id="3034:12106" name="74.6%" x="283.401611328125" y="4.5" width="58" height="19" />
+            </frame>
+          </frame>
+          <frame id="3034:12117" name="数据列表" x="0" y="30" width="373" height="30">
+            <frame id="3034:12118" name="列表数据" x="10.85140609741211" y="0" width="350" height="28">
+              <text id="3034:12119" name="2.较高风险" x="6.200803279876709" y="4.5" width="79" height="19" />
+              <frame id="3034:12150" name="条形图-01" x="88.30120849609375" y="11" width="192" height="6">
+                <vector id="3034:12151" name="Union" x="120" y="0" width="120.00000026226871" height="6.000010490575278" />
+                <vector id="3034:12152" name="Union" x="123.87550354003906" y="8.470178869401934e-8" width="3.8755023717958466" height="6.00000016940362" />
+              </frame>
+              <text id="3034:12121" name="62.1%" x="283.401611328125" y="4.5" width="58" height="19" />
+            </frame>
+          </frame>
+          <frame id="3034:12125" name="数据列表" x="0" y="60" width="373" height="30">
+            <frame id="3034:12126" name="列表数据" x="10.85140609741211" y="0" width="350" height="28">
+              <text id="3034:12127" name="3.中风险" x="6.200803279876709" y="4.5" width="79" height="19" />
+              <frame id="3034:12153" name="条形图-01" x="88.30120849609375" y="11" width="192" height="6">
+                <vector id="3034:12154" name="Union" x="100" y="2.9802322387695312e-8" width="100.00000026226871" height="6.000008662673281" />
+                <vector id="3034:12155" name="Union" x="103.87550354003906" y="8.470178869401934e-8" width="3.8755023717958466" height="6.00000016940362" />
+              </frame>
+              <text id="3034:12129" name="48.4%" x="283.401611328125" y="4.5" width="58" height="19" />
+            </frame>
+          </frame>
+          <frame id="3034:12132" name="数据列表" x="0" y="90" width="373" height="32">
+            <frame id="3034:12133" name="列表数据" x="10.85140609741211" y="0" width="350" height="28">
+              <text id="3034:12134" name="4.低风险" x="6.200803279876709" y="4.5" width="79" height="19" />
+              <frame id="3034:12156" name="条形图-01" x="88.30120849609375" y="11" width="192" height="6">
+                <vector id="3034:12157" name="Union" x="86" y="-2.9802322387695312e-8" width="86.00000026226871" height="6.000007573876701" />
+                <vector id="3034:12158" name="Union" x="89.87550354003906" y="8.470178869401934e-8" width="3.8755023717958466" height="6.00000016940362" />
+              </frame>
+              <text id="3034:12136" name="33.5%" x="283.401611328125" y="4.5" width="58" height="19" />
+            </frame>
+          </frame>
+          <frame id="3034:12139" name="数据列表" x="0" y="122" width="373" height="30">
+            <frame id="3034:12140" name="列表数据" x="10.85140609741211" y="0" width="350" height="28">
+              <text id="3034:12141" name="5.低风险" x="6.200803279876709" y="4.5" width="79" height="19" />
+              <frame id="3034:12147" name="条形图-01" x="88.30120849609375" y="11" width="192" height="6">
+                <vector id="3034:12148" name="Union" x="72" y="-8.940696716308594e-8" width="72.00000026226826" height="6.000006485080121" />
+                <vector id="3034:12149" name="Union" x="75.87550354003906" y="8.470178869401934e-8" width="3.8755023717958466" height="6.00000016940362" />
+              </frame>
+              <text id="3034:12143" name="31.6%" x="283.401611328125" y="4.5" width="58" height="19" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:11084" name="数据模块" x="26" y="515" width="386" height="217">
+          <instance id="3033:11085" name="一级标题样式-03-h209" x="26" y="515" width="386" height="42" />
+          <instance id="3033:11086" name="轴-线" x="40" y="583" width="340" height="149" />
+          <frame id="3033:11087" name="折线图-01" x="70" y="573" width="309" height="148">
+            <vector id="3033:11088" name="面" x="-14.591655731201172" y="18.654293060302734" width="339.04168701171875" height="152.03907775878906" hidden="true" />
+            <vector id="3033:11089" name="线" x="-14.591655731201172" y="18.654293060302734" width="339.04168701171875" height="152.03907775878906" />
+            <vector id="3033:11090" name="线" x="-14.591693878173828" y="37.751068115234375" width="339.04168701171875" height="152.03907775878906" />
+            <vector id="3033:11091" name="线" x="-14.591693878173828" y="61.622032165527344" width="339.04168701171875" height="152.03907775878906" />
+            <vector id="3033:11092" name="线" x="-14.591693878173828" y="95.83708953857422" width="339.04168701171875" height="152.03907775878906" />
+            <ellipse id="3033:11093" name="Ellipse 2489" x="21" y="134" width="6" height="6" />
+            <ellipse id="3033:11094" name="Ellipse 2490" x="21" y="100" width="6" height="6" />
+            <ellipse id="3033:11095" name="Ellipse 2491" x="21" y="76" width="6" height="6" />
+            <ellipse id="3033:11096" name="Ellipse 2492" x="21" y="56" width="6" height="6" />
+            <ellipse id="3033:11097" name="Ellipse 2493" x="78" y="71" width="6" height="6" />
+            <ellipse id="3033:11098" name="Ellipse 2497" x="132" y="53" width="6" height="6" />
+            <ellipse id="3033:11099" name="Ellipse 2501" x="172" y="45" width="6" height="6" />
+            <ellipse id="3033:11100" name="Ellipse 2502" x="172" y="67" width="6" height="6" />
+            <ellipse id="3033:11101" name="Ellipse 2512" x="172" y="92" width="6" height="6" />
+            <ellipse id="3033:11102" name="Ellipse 2503" x="172" y="124" width="6" height="6" />
+            <ellipse id="3033:11103" name="Ellipse 2504" x="227" y="99" width="6" height="6" />
+            <ellipse id="3033:11104" name="Ellipse 2505" x="227" y="63" width="6" height="6" />
+            <ellipse id="3033:11105" name="Ellipse 2506" x="227" y="41" width="6" height="6" />
+            <ellipse id="3033:11106" name="Ellipse 2507" x="227" y="21" width="6" height="6" />
+            <ellipse id="3033:11107" name="Ellipse 2508" x="283" y="24" width="6" height="6" />
+            <ellipse id="3033:11108" name="Ellipse 2509" x="283" y="70" width="6" height="6" />
+            <ellipse id="3033:11109" name="Ellipse 2510" x="283" y="99" width="6" height="6" />
+            <ellipse id="3033:11110" name="Ellipse 2511" x="287" y="131" width="6" height="6" />
+            <ellipse id="3033:11111" name="Ellipse 2498" x="132" y="73" width="6" height="6" />
+            <ellipse id="3033:11112" name="Ellipse 2499" x="132" y="95" width="6" height="6" />
+            <ellipse id="3033:11113" name="Ellipse 2500" x="132" y="130" width="6" height="6" />
+            <ellipse id="3033:11114" name="Ellipse 2494" x="78" y="89" width="6" height="6" />
+            <ellipse id="3033:11115" name="Ellipse 2495" x="78" y="114" width="6" height="6" />
+            <ellipse id="3033:11116" name="Ellipse 2496" x="78" y="137" width="6" height="6" />
+          </frame>
+        </frame>
+        <frame id="3033:11117" name="数据模块" x="1528" y="307.1644287109375" width="361" height="271" hidden="true">
+          <instance id="3033:11118" name="一级标题样式-03-h209" x="1528" y="307.1644287109375" width="361" height="42" />
+          <instance id="3033:11119" name="轴-线" x="1539.048828125" y="368.1644287109375" width="340" height="210" />
+          <frame id="3033:11120" name="柱状图" x="1569" y="373.1644287109375" width="310" height="187">
+            <instance id="3033:11121" name="柱状图-001" x="12" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11122" name="柱状图-001" x="42.7998046875" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11123" name="柱状图-001" x="73.5999984741211" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11124" name="柱状图-001" x="104.39999389648438" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11125" name="柱状图-001" x="135.1999969482422" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11126" name="柱状图-001" x="166" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11127" name="柱状图-001" x="196.8000030517578" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11128" name="柱状图-001" x="227.60000610351562" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11129" name="柱状图-001" x="258.3999938964844" y="0" width="8.800000190734863" height="187" />
+            <instance id="3033:11130" name="柱状图-001" x="289.1999816894531" y="0" width="8.800000190734863" height="187" />
+          </frame>
+        </frame>
+        <frame id="3033:11131" name="数据模块" x="26" y="741" width="386" height="244.636962890625">
+          <instance id="3033:11132" name="一级标题样式-03-h209" x="26" y="741" width="386" height="42" />
+          <frame id="3033:11133" name="Group 1321315227" x="42.2392578125" y="772.636962890625" width="339.345947265625" height="213">
+            <frame id="3033:11134" name="图例" x="206.585205078125" y="772.636962890625" width="175" height="213">
+              <instance id="3033:11135" name="环形图 图例" x="0" y="22.5" width="175" height="36" />
+              <instance id="3033:11136" name="环形图 图例" x="0" y="66.5" width="175" height="36" />
+              <instance id="3033:11137" name="环形图 图例" x="0" y="110.5" width="175" height="36" />
+              <instance id="3033:11138" name="环形图 图例" x="0" y="154.5" width="175" height="36" />
+            </frame>
+            <frame id="3033:11140" name="环形图装饰" x="42.2392578125" y="792.75927734375" width="151.990966796875" height="173.255126953125" />
+            <frame id="3033:11150" name="环形图" x="58" y="815" width="120" height="120" />
+            <frame id="3033:11157" name="danqian" x="93" y="854" width="58" height="42">
+              <text id="3033:11158" name="62.3" x="0" y="0" width="58" height="24" />
+              <text id="3033:11159" name="中风险" x="11" y="28" width="36" height="14" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:11160" name="重要数据" x="903" y="544" width="218" height="176" hidden="true">
+          <frame id="3033:11161" name="标题-01" x="0" y="0" width="218" height="42">
+            <vector id="3033:11162" name="Rectangle 34624386" x="0" y="0" width="218" height="42" />
+            <frame id="3033:11163" name="Mask group" x="0" y="0" width="218" height="42" />
+            <frame id="3033:11171" name="Frame 1321315220" x="0.05078125" y="7.60009765625" width="121" height="28">
+              <instance id="3033:11172" name="运行" x="4" y="1" width="26" height="26" />
+              <text id="3033:11173" name="区域名称" x="38" y="0" width="79" height="28" />
+            </frame>
+          </frame>
+          <frame id="3033:11174" name="Frame 1321315228" x="0" y="42" width="218" height="134">
+            <frame id="3033:11175" name="Frame 1321315227" x="8" y="8" width="202" height="39.33333206176758">
+              <frame id="3033:11176" name="Frame 1321315226" x="0" y="4.666666030883789" width="26" height="26">
+                <text id="3033:11177" name="日" x="4" y="2" width="18" height="22" />
+              </frame>
+              <frame id="3033:11178" name="Frame 1321315216" x="80" y="2.166666030883789" width="122" height="31">
+                <text id="3033:11179" name="3254.68" x="0" y="0" width="84" height="31" />
+                <text id="3033:11180" name="tce" x="88" y="5.8677978515625" width="26" height="19.264404296875" />
+              </frame>
+            </frame>
+            <frame id="3033:11181" name="Frame 1321315228" x="8" y="47.33333206176758" width="202" height="39.333335876464844">
+              <frame id="3033:11182" name="Frame 1321315226" x="0" y="4.666667938232422" width="26" height="26">
+                <text id="3033:11183" name="月" x="4" y="2" width="18" height="22" />
+              </frame>
+              <frame id="3033:11184" name="Frame 1321315216" x="80" y="2.166667938232422" width="122" height="31">
+                <text id="3033:11185" name="3254.68" x="0" y="0" width="84" height="31" />
+                <text id="3033:11186" name="tce" x="88" y="5.8677978515625" width="26" height="19.264404296875" />
+              </frame>
+            </frame>
+            <frame id="3033:11187" name="Frame 1321315229" x="8" y="86.66667175292969" width="202" height="39.333335876464844">
+              <frame id="3033:11188" name="Frame 1321315226" x="0" y="4.666667938232422" width="26" height="26">
+                <text id="3033:11189" name="年" x="4" y="2" width="18" height="22" />
+              </frame>
+              <frame id="3033:11190" name="Frame 1321315216" x="80" y="2.166667938232422" width="122" height="31">
+                <text id="3033:11191" name="3254.68" x="0" y="0" width="84" height="31" />
+                <text id="3033:11192" name="tce" x="88" y="5.8677978515625" width="26" height="19.264404296875" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <instance id="3033:11193" name="定位-蓝" x="914.8169555664062" y="411.36444091796875" width="148.09375" height="42" />
+        <instance id="3033:11194" name="定位-橙" x="728.8631591796875" y="274.966796875" width="148.09375" height="42" />
+        <frame id="3035:12492" name="Group 1321315428" x="440" y="733" width="1050" height="241">
+          <frame id="3035:12176" name="Group 1321315422" x="439.99993896484375" y="733" width="517" height="241">
+            <rounded-rectangle id="3033:11197" name="S-209" x="440" y="733" width="517" height="241" />
+            <instance id="3033:11198" name="一级标题样式-03-h209" x="440" y="733" width="517" height="42" />
+            <frame id="3035:12494" name="Group 1321315429" x="449.211181640625" y="804" width="485.788818359375" height="163">
+              <instance id="3035:12495" name="轴-线" x="449.211181640625" y="804" width="468.0886535644531" height="163" />
+              <frame id="3035:12589" name="D-Din" x="906" y="944" width="26" height="10">
+                <text id="3035:12590" name="1000" x="20" y="0" width="6" height="10" />
+              </frame>
+              <text id="3035:12587" name="1000" x="918" y="909" width="14" height="10" />
+              <frame id="3035:12584" name="D-Din" x="909" y="874" width="26" height="10">
+                <text id="3035:12585" name="1000" x="12" y="0" width="14" height="10" />
+              </frame>
+              <frame id="3035:12580" name="D-Din" x="909" y="804" width="26" height="10">
+                <text id="3035:12581" name="1000" x="6" y="0" width="20" height="10" />
+              </frame>
+              <frame id="3035:12496" name="柱状图" x="479" y="808" width="438" height="139">
+                <instance id="3035:12497" name="柱状图-001" x="16" y="0" width="11.800000190734863" height="139" />
+                <instance id="3035:12498" name="柱状图-001" x="59.79999923706055" y="0" width="11.799999237060547" height="139" />
+                <instance id="3035:12499" name="柱状图-001" x="103.5999984741211" y="-6" width="11.799999237060547" height="145" />
+                <instance id="3035:12500" name="柱状图-001" x="147.39999389648438" y="0" width="11.79999828338623" height="139" />
+                <instance id="3035:12501" name="柱状图-001" x="191.1999969482422" y="0" width="11.799999237060547" height="139" />
+                <instance id="3035:12502" name="柱状图-001" x="235" y="-6" width="11.799999237060547" height="145" />
+                <instance id="3035:12503" name="柱状图-001" x="278.79998779296875" y="0" width="11.799999237060547" height="139" />
+                <instance id="3035:12504" name="柱状图-001" x="322.5999755859375" y="0" width="11.799999237060547" height="139" />
+                <instance id="3035:12505" name="柱状图-001" x="366.39996337890625" y="0" width="11.799999237060547" height="139" />
+                <instance id="3035:12506" name="柱状图-001" x="410.199951171875" y="0" width="11.799999237060547" height="139" />
+              </frame>
+            </frame>
+            <vector id="3035:12592" name="Vector 883" x="916.32177734375" y="843" width="420.32183837890625" height="65.85527801513672" />
+          </frame>
+          <frame id="3035:12177" name="Group 1321315423" x="973" y="733" width="517" height="241">
+            <rounded-rectangle id="3035:12178" name="S-209" x="973" y="736" width="517" height="238" />
+            <frame id="3035:12594" name="Group 1321315429" x="982.211181640625" y="804" width="485.788818359375" height="163">
+              <instance id="3035:12595" name="轴-线" x="982.211181640625" y="804" width="468.0886535644531" height="163" />
+              <frame id="3035:12596" name="D-Din" x="1439" y="944" width="26" height="10">
+                <text id="3035:12597" name="1000" x="20" y="0" width="6" height="10" />
+              </frame>
+              <text id="3035:12598" name="1000" x="1451" y="909" width="14" height="10" />
+              <frame id="3035:12599" name="D-Din" x="1442" y="874" width="26" height="10">
+                <text id="3035:12600" name="1000" x="12" y="0" width="14" height="10" />
+              </frame>
+              <frame id="3035:12601" name="D-Din" x="1442" y="804" width="26" height="10">
+                <text id="3035:12602" name="1000" x="6" y="0" width="20" height="10" />
+              </frame>
+              <frame id="3035:12603" name="柱状图" x="1012" y="808" width="438" height="139" />
+            </frame>
+            <instance id="3035:12179" name="一级标题样式-03-h209" x="973" y="733" width="517" height="42" />
+            <frame id="3055:13774" name="折线图-01" x="1013" y="777" width="435" height="174" />
+          </frame>
+          <frame id="3055:13778" name="折线图-01" x="1024" y="796" width="422" height="148">
+            <vector id="3055:13779" name="面" x="-19.927762985229492" y="18.654293060302734" width="463.0278015136719" height="152.03907775878906" hidden="true" />
+            <vector id="3055:13780" name="线" x="-19.927762985229492" y="18.654293060302734" width="463.0278015136719" height="152.03907775878906" />
+            <vector id="3055:13781" name="线" x="-19.927814483642578" y="37.751068115234375" width="463.0278015136719" height="152.03907775878906" />
+            <ellipse id="3055:13786" name="Ellipse 2491" x="29" y="76" width="8" height="8" />
+            <ellipse id="3055:13787" name="Ellipse 2492" x="29" y="56" width="8" height="8" />
+            <ellipse id="3055:13788" name="Ellipse 2493" x="107" y="71" width="8" height="8" />
+            <ellipse id="3055:13789" name="Ellipse 2497" x="180" y="53" width="8" height="8" />
+            <ellipse id="3055:13790" name="Ellipse 2501" x="235" y="45" width="8" height="8" />
+            <ellipse id="3055:13809" name="Ellipse 2502" x="235" y="67" width="8" height="8" />
+            <ellipse id="3055:13810" name="Ellipse 2503" x="311" y="19" width="8" height="8" />
+            <ellipse id="3055:13811" name="Ellipse 2504" x="311" y="41" width="8" height="8" />
+            <ellipse id="3055:13812" name="Ellipse 2505" x="402" y="15" width="8" height="8" />
+            <ellipse id="3055:13813" name="Ellipse 2506" x="402" y="34" width="8" height="8" />
+            <ellipse id="3055:13802" name="Ellipse 2498" x="180" y="73" width="8" height="8" />
+            <ellipse id="3055:13805" name="Ellipse 2494" x="107" y="89" width="8" height="8" />
+          </frame>
+        </frame>
+        <frame id="3055:13826" name="Group 1321315431" x="751" y="781" width="92" height="15">
+          <text id="3055:13816" name="降水量(mm)" x="777" y="781" width="66" height="15" />
+          <vector id="3055:13819" name="Union" x="751.0000001311341" y="790" width="22.00000013113413" height="3.0000000079762685" />
+        </frame>
+        <frame id="3055:13825" name="Group 1321315430" x="857" y="781" width="80" height="15">
+          <vector id="3055:13822" name="Union" x="857.0000000874229" y="789" width="22.000000087422904" height="2.0000000079762685" />
+          <text id="3055:13817" name="位移(mm)" x="883" y="781" width="54" height="15" />
+        </frame>
+        <text id="3035:12582" name="1000" x="919" y="838" width="14" height="10" />
+        <frame id="3035:12161" name="Frame 1321315508" x="201" y="564" width="178" height="18">
+          <frame id="3033:11386" name="Group 1321315409" x="0" y="0" width="34" height="18">
+            <ellipse id="3033:11387" name="Ellipse 2507" x="0" y="5" width="8" height="8" />
+            <text id="3033:11388" name="红色" x="10" y="0" width="24" height="18" />
+          </frame>
+          <frame id="3033:11389" name="Group 1321315410" x="48" y="0" width="34" height="18">
+            <ellipse id="3033:11390" name="Ellipse 2507" x="48" y="5" width="8" height="8" />
+            <text id="3033:11391" name="橙色" x="58" y="0" width="24" height="18" />
+          </frame>
+          <frame id="3033:11392" name="Group 1321315411" x="96" y="0" width="34" height="18">
+            <ellipse id="3033:11393" name="Ellipse 2507" x="96" y="5" width="8" height="8" />
+            <text id="3033:11394" name="黄色" x="106" y="0" width="24" height="18" />
+          </frame>
+          <frame id="3033:11395" name="Group 1321315412" x="144" y="0" width="34" height="18">
+            <ellipse id="3033:11396" name="Ellipse 2507" x="144" y="5" width="8" height="8" />
+            <text id="3033:11397" name="蓝色" x="154" y="0" width="24" height="18" />
+          </frame>
+        </frame>
+        <frame id="3033:11398" name="Frame 1321315231" x="1423" y="529" width="63" height="59" />
+        <frame id="3033:11992" name="Group 1321315416" x="442" y="83" width="173" height="76">
+          <rounded-rectangle id="3033:10814" name="1 237" x="442" y="83" width="69" height="76" />
+          <frame id="3055:14241" name="表-水" x="451" y="96" width="52" height="50">
+            <vector id="3055:14242" name="Union" x="2.4375" y="2.34375" width="47.125" height="45.3125" />
+            <instance id="3055:14247" name="预警-01" x="14" y="11" width="24" height="25" />
+          </frame>
+          <frame id="3033:11985" name="Frame 427319078" x="520" y="94" width="95" height="49">
+            <frame id="3033:11986" name="Frame 427319064" x="0" y="0" width="134" height="22.5">
+              <text id="3033:11987" name="红色预警" x="4" y="-0.75" width="56" height="24" />
+            </frame>
+            <frame id="3033:11988" name="Frame 11212" x="0" y="26.5" width="95" height="22.5">
+              <text id="3033:11989" name="2" x="4" y="-9.75" width="15" height="42" />
+              <text id="3033:11990" name="处" x="19" y="-9.75" width="18" height="42" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:12033" name="Group 1321315419" x="792" y="83" width="173" height="76">
+          <rounded-rectangle id="3033:12034" name="1 237" x="792" y="83" width="69" height="76" />
+          <frame id="3055:14245" name="表-水" x="801" y="96" width="52" height="50">
+            <vector id="3055:14246" name="Union" x="2.4375" y="2.34375" width="47.125" height="45.3125" />
+            <instance id="3055:14253" name="预警-01" x="14" y="11" width="24.000001907348633" height="25.000001907348633" />
+          </frame>
+          <frame id="3033:12035" name="Frame 427319078" x="870" y="94" width="95" height="49">
+            <frame id="3033:12036" name="Frame 427319064" x="0" y="0" width="134" height="22.5">
+              <text id="3033:12037" name="蓝色预警" x="4" y="-0.75" width="56" height="24" />
+            </frame>
+            <frame id="3033:12038" name="Frame 11212" x="0" y="26.5" width="95" height="22.5">
+              <text id="3033:12039" name="12" x="4" y="-9.75" width="29" height="42" />
+              <text id="3033:12040" name="处" x="33" y="-9.75" width="18" height="42" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:11993" name="Group 1321315417" x="967" y="88" width="173" height="76">
+          <rounded-rectangle id="3033:11994" name="1 237" x="967" y="88" width="69" height="76" />
+          <frame id="3055:14256" name="表-水" x="976" y="101" width="52" height="50">
+            <vector id="3055:14257" name="Union" x="2.4375" y="2.34375" width="47.125" height="45.3125" />
+            <frame id="3055:14258" name="Frame" x="14" y="13" width="24" height="24" />
+          </frame>
+          <frame id="3033:11995" name="Frame 427319078" x="1045" y="99" width="95" height="49">
+            <frame id="3033:11996" name="Frame 427319064" x="0" y="0" width="134" height="22.5">
+              <text id="3033:11997" name="设备在线绿" x="4" y="-0.75" width="70" height="24" />
+            </frame>
+            <frame id="3033:11998" name="Frame 11212" x="0" y="26.5" width="95" height="22.5">
+              <text id="3033:11999" name="96.8" x="4" y="-9.75" width="50" height="42" />
+              <text id="3033:12000" name="%" x="54" y="-9.75" width="15" height="42" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:12041" name="Group 1321315420" x="1142" y="83" width="173" height="76">
+          <rounded-rectangle id="3033:12042" name="1 237" x="1142" y="83" width="69" height="76" />
+          <instance id="3055:14226" name="表-水" x="1151" y="96" width="52" height="50" />
+          <frame id="3033:12043" name="Frame 427319078" x="1220" y="94" width="95" height="49">
+            <frame id="3033:12044" name="Frame 427319064" x="0" y="0" width="134" height="22.5">
+              <text id="3033:12045" name="最大降水量" x="4" y="-0.75" width="70" height="24" />
+            </frame>
+            <frame id="3033:12046" name="Frame 11212" x="0" y="26.5" width="95" height="22.5">
+              <text id="3033:12047" name="26.4" x="4" y="-9.75" width="50" height="42" />
+              <text id="3033:12048" name="mm" x="54" y="-9.75" width="34" height="42" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:12001" name="Group 1321315418" x="617" y="83" width="173" height="76">
+          <rounded-rectangle id="3033:12002" name="1 237" x="617" y="83" width="69" height="76" />
+          <frame id="3055:14243" name="表-水" x="626" y="96" width="52" height="50">
+            <vector id="3055:14244" name="Union" x="2.4375" y="2.34375" width="47.125" height="45.3125" />
+            <instance id="3055:14250" name="预警-01" x="14" y="11" width="24.000001907348633" height="25.000001907348633" />
+          </frame>
+          <frame id="3033:12003" name="Frame 427319078" x="695" y="94" width="95" height="49">
+            <frame id="3033:12004" name="Frame 427319064" x="0" y="0" width="134" height="22.5">
+              <text id="3033:12005" name="橙色预警" x="4" y="-0.75" width="56" height="24" />
+            </frame>
+            <frame id="3033:12006" name="Frame 11212" x="0" y="26.5" width="95" height="22.5">
+              <text id="3033:12007" name="2" x="4" y="-9.75" width="15" height="42" />
+              <text id="3033:12008" name="处" x="19" y="-9.75" width="18" height="42" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="3033:12049" name="Group 1321315421" x="1317" y="83" width="173" height="76">
+          <rounded-rectangle id="3033:12050" name="1 237" x="1317" y="83" width="69" height="76" />
+          <instance id="3055:14223" name="表-电" x="1326" y="96" width="51" height="50" />
+          <frame id="3033:12051" name="Frame 427319078" x="1395" y="94" width="95" height="49">
+            <frame id="3033:12052" name="Frame 427319064" x="0" y="0" width="134" height="22.5">
+              <text id="3033:12053" name="雷暴热点" x="4" y="-0.75" width="56" height="24" />
+            </frame>
+            <frame id="3033:12054" name="Frame 11212" x="0" y="26.5" width="95" height="22.5">
+              <text id="3033:12055" name="18" x="4" y="-9.75" width="29" height="42" />
+              <text id="3033:12056" name="处" x="33" y="-9.75" width="18" height="42" />
+            </frame>
+          </frame>
+        </frame>
+        <instance id="3035:12464" name="Frame 1321315483" x="1534" y="653" width="91" height="65" />
+        <instance id="3035:12471" name="Frame 1321315509" x="1620" y="653" width="91" height="65" />
+        <instance id="3035:12478" name="Frame 1321315510" x="1707" y="653" width="90" height="65" />
+        <instance id="3035:12485" name="Frame 1321315511" x="1797" y="653" width="91" height="65" />
+        <rounded-rectangle id="3055:14219" name="三角定位-红 1" x="448" y="97" width="57" height="52" />
+        <ellipse id="3055:14222" name="Ellipse 2515" x="1415" y="640" width="76" height="76" />
+        <frame id="3055:14271" name="一级标题样式-03-h209" x="436" y="176" width="1044" height="59">
+          <vector id="3055:14272" name="bg" x="0.15534618496894836" y="4.214285850524902" width="1043.7752685546875" height="53.380950927734375" />
+          <vector id="3055:14273" name="线" x="2.356659173965454" y="57.595237731933594" width="1041.573974609375" height="0" />
+          <vector id="3055:14275" name="Union" x="999.970703125" y="56.9775390625" width="33.944271087646484" height="1.0225893259048462" />
+          <text id="3055:14279" name="小标题" x="50.506591796875" y="13.950927734375" width="247.5065780878067" height="32.33592236042023" />
+          <frame id="3055:14284" name="Frame 427319064" x="299" y="19" width="134" height="22.5">
+            <text id="3055:14285" name="播报内容：XXXXXXXXXXX" x="4" y="-0.75" width="230" height="24" />
+          </frame>
+          <frame id="3055:14290" name="Frame" x="14" y="22" width="20" height="20" />
+          <text id="3055:14295" name="查看详情 &gt;" x="957" y="22" width="77" height="22" />
+        </frame>
+      </frame>
+    </frame>
+    <rounded-rectangle id="3055:14220" name="huaban-6722954060 1" x="1417" y="732" width="72" height="72" />
+    <frame id="3033:11399" name="top" x="0" y="0" width="1920" height="80">
+      <rounded-rectangle id="3033:11400" name="bg" x="0" y="0" width="1920" height="80" />
+      <rounded-rectangle id="3033:11401" name="线" x="0" y="76" width="1920" height="4" />
+      <rounded-rectangle id="3033:11402" name="线" x="0" y="74" width="1920" height="2" />
+      <rounded-rectangle id="3033:11403" name="短线" x="1068.250732421875" y="74" width="12" height="2" />
+      <rounded-rectangle id="3033:11404" name="短线" x="1250.689453125" y="74" width="24" height="2" />
+      <frame id="3033:11405" name="Group 1321315398" x="446" y="-14.779586791992188" width="1055.904541015625" height="89.77958679199219" hidden="true">
+        <frame id="3033:11406" name="1" x="446" y="-14.779586791992188" width="292.9045715332031" height="89.77958679199219">
+          <vector id="3033:11407" name="Union" x="446" y="-14.779586791992188" width="109.43122863769531" height="89.77958679199219" />
+          <vector id="3033:11408" name="Union" x="598.9453125" y="-14.779586791992188" width="87.45752716064453" height="89.77958679199219" />
+          <vector id="3033:11409" name="Union" x="528.4649810791016" y="-14.779586791992188" width="97.44556427001953" height="89.77958679199219" />
+          <vector id="3033:11410" name="Union" x="659.4375" y="-14.779586791992188" width="79.46707153320312" height="89.77958679199219" />
+        </frame>
+        <frame id="3033:11411" name="3" x="1501.904541015625" y="-14.779586791992188" width="292.9045715332031" height="89.77958679199219">
+          <vector id="3033:11412" name="Union" x="1501.904541015625" y="-14.779586791992188" width="109.43122863769531" height="89.77958679199219" />
+          <vector id="3033:11413" name="Union" x="1348.959228515625" y="-14.779586791992188" width="87.45752716064453" height="89.77958679199219" />
+          <vector id="3033:11414" name="Union" x="1419.4395599365234" y="-14.779586791992188" width="97.44556427001953" height="89.77958679199219" />
+          <vector id="3033:11415" name="Union" x="1288.467041015625" y="-14.779586791992188" width="79.46707153320312" height="89.77958679199219" />
+        </frame>
+      </frame>
+      <frame id="3033:11416" name="2" x="1696.6619873046875" y="-14.1644287109375" width="223.33746337890625" height="61.6197509765625" hidden="true" />
+      <vector id="3033:11421" name="射灯" x="1909.052734375" y="-106.59130859375" width="173.81732269383065" height="173.81732269383065" hidden="true" />
+      <frame id="3033:11422" name="按钮" x="617.053466796875" y="16.1494140625" width="457.197265625" height="52.6115608215332" hidden="true">
+        <frame id="3033:11423" name="按钮" x="617.053466796875" y="16.1494140625" width="182.58984375" height="52.6115608215332">
+          <vector id="3033:11424" name="Union" x="617.053466796875" y="16.1494140625" width="182.58984375" height="52.6115608215332" />
+          <text id="3033:11425" name="导航按钮" x="669.638427734375" y="28.1893310546875" width="96.57952708005905" height="29.482752740383148" />
+        </frame>
+        <text id="3033:11426" name="导航按钮" x="846.340576171875" y="28.189453125" width="96.57952708005905" height="29.482752740383148" />
+        <text id="3033:11427" name="导航按钮" x="987.250732421875" y="28.189453125" width="96.57952708005905" height="29.482752740383148" />
+      </frame>
+      <vector id="3033:11428" name="Union" x="560.965576171875" y="49.4522705078125" width="17.3527774810791" height="15.547769546508789" hidden="true" />
+      <vector id="3033:11429" name="Union" x="578.319091796875" y="49.4522705078125" width="17.3527774810791" height="15.547769546508789" hidden="true" />
+      <instance id="3033:11430" name="0组合光线2" x="763" y="69" width="454" height="22" />
+      <frame id="3033:11431" name="时间" x="45" y="21.16796875" width="255" height="36">
+        <instance id="3033:11432" name="home" x="0" y="4" width="28" height="28" hidden="true" />
+        <instance id="3033:11433" name="天气-温度" x="0" y="0" width="255" height="36" />
+      </frame>
+      <rounded-rectangle id="3033:11434" name="用户中心 1" x="1785" y="28" width="24" height="24" />
+      <text id="3033:11435" name="管理员" x="1818" y="26" width="60" height="28" />
+      <frame id="3033:11436" name="Frame" x="1883" y="32" width="16" height="16" />
+    </frame>
+    <vector id="3033:11439" name="模糊" x="586" y="21.16796875" width="833.43359375" height="52.574195861816406" />
+  </frame>
+  <vector id="3033:11440" name="Union" x="2770" y="1164" width="872.58984375" height="52.6115608215332" />
+  <vector id="3033:11441" name="Union" x="2730.888671875" y="1201.4522705078125" width="17.3527774810791" height="15.547769546508789" />
+  <vector id="3033:11442" name="Union" x="2748.2421875" y="1201.4522705078125" width="17.3527774810791" height="15.547769546508789" />
+  <frame id="3033:11443" name="Group 1321315415" x="3623.888671875" y="1201.4522705078125" width="34.70629119873047" height="15.547769546508789" />
+  <frame id="3033:11446" name="Frame 1321315484" x="2846" y="1164.23046875" width="715.141845703125" height="46.60177230834961">
+    <text id="3033:11447" name="包头市重点区域气象灾害监测预警平台" x="15.141839027404785" y="0" width="715.141833126545" height="46.60177046060562" />
+  </frame>
+  <frame id="3033:11448" name="主要数据" x="2216" y="1232" width="1914" height="94">
+    <frame id="3033:11449" name="Group 1321315228" x="0" y="0" width="258" height="94">
+      <vector id="3033:11450" name="Rectangle 3712" x="26.000001907348633" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11451" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11452" name="综合态势" x="37.712890625" y="3.5454559326171875" width="87" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11453" name="Group 1321315237" x="207" y="0" width="258" height="94">
+      <vector id="3033:11454" name="Rectangle 3712" x="26.000001907348633" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11455" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11456" name="三维孪生一张图" x="5.2129058837890625" y="3.545452117919922" width="152" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11457" name="Group 1321315238" x="414" y="0" width="258" height="94">
+      <vector id="3033:11458" name="Rectangle 3712" x="26.000001907348633" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11459" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11460" name="监测设备中心" x="16.212905883789062" y="3.545452117919922" width="130" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11461" name="Group 1321315239" x="621" y="0" width="258" height="94">
+      <vector id="3033:11462" name="Rectangle 3712" x="26.000001907348633" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11463" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11464" name="检测点详情" x="26.712905883789062" y="3.545452117919922" width="109" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11465" name="Group 1321315240" x="828" y="0" width="258" height="94">
+      <vector id="3033:11466" name="Rectangle 3712" x="29.000001907348633" y="61" width="207.1473562270985" height="48.00000141248029" />
+      <frame id="3033:11467" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11468" name="预警中心" x="37.71290588378906" y="3.545452117919922" width="87" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11469" name="Group 1321315241" x="1035" y="0" width="258" height="94">
+      <vector id="3033:11470" name="Rectangle 3712" x="240" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11471" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11472" name="应急处置指挥" x="16.212905883789062" y="3.545452117919922" width="130" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11473" name="Group 1321315242" x="1242" y="0" width="258" height="94">
+      <vector id="3033:11474" name="Rectangle 3712" x="240" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11475" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11476" name="智能模型分析" x="16.212905883789062" y="3.545452117919922" width="130" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11477" name="Group 1321315243" x="1449" y="0" width="258" height="94">
+      <vector id="3033:11478" name="Rectangle 3712" x="240" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11479" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11480" name="数据资源中心" x="16.212905883789062" y="3.545452117919922" width="130" height="42" />
+      </frame>
+    </frame>
+    <frame id="3033:11481" name="Group 1321315244" x="1656" y="0" width="258" height="94">
+      <vector id="3033:11482" name="Rectangle 3712" x="240" y="61" width="208.00000210112194" height="48.00000144969772" />
+      <frame id="3033:11483" name="Frame 427319078" x="50" y="12" width="162.42581176757812" height="49.090904235839844">
+        <text id="3033:11484" name="事态复盘评估" x="16.212905883789062" y="3.545452117919922" width="130" height="42" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="3033:11490" name="重要数据" x="3560" y="1491" width="146" height="176">
+    <frame id="3033:11491" name="标题-01" x="0" y="0" width="146" height="42">
+      <vector id="3033:11492" name="Rectangle 34624386" x="0" y="0" width="218" height="42" />
+      <frame id="3033:11493" name="Mask group" x="0" y="0" width="218" height="42" />
+      <frame id="3033:11501" name="Frame 1321315220" x="0.05078125" y="7.60009765625" width="121" height="28">
+        <instance id="3033:11502" name="运行" x="4" y="1" width="26" height="26" />
+        <text id="3033:11503" name="风险等级" x="38" y="0" width="79" height="28" />
+      </frame>
+    </frame>
+    <frame id="3033:11504" name="Frame 1321315228" x="0" y="42" width="146" height="134">
+      <frame id="3033:11505" name="Frame 1321315227" x="8" y="8" width="130" height="29.5">
+        <frame id="3033:11506" name="Frame 1321315216" x="4" y="-1.25" width="122" height="28">
+          <ellipse id="3033:11507" name="Ellipse 2513" x="34" y="9" width="10" height="10" />
+          <text id="3033:11508" name="红色" x="48" y="0" width="40" height="28" />
+        </frame>
+      </frame>
+      <frame id="3033:11509" name="Frame 1321315228" x="8" y="37.5" width="130" height="29.5">
+        <frame id="3033:11510" name="Frame 1321315216" x="4" y="-1.25" width="122" height="28">
+          <ellipse id="3033:11511" name="Ellipse 2513" x="34" y="9" width="10" height="10" />
+          <text id="3033:11512" name="橙色" x="48" y="0" width="40" height="28" />
+        </frame>
+      </frame>
+      <frame id="3034:12061" name="Frame 1321315230" x="8" y="67" width="130" height="29.5">
+        <frame id="3034:12062" name="Frame 1321315216" x="4" y="-1.25" width="122" height="28">
+          <ellipse id="3034:12063" name="Ellipse 2513" x="34" y="9" width="10" height="10" />
+          <text id="3034:12064" name="黄色" x="48" y="0" width="40" height="28" />
+        </frame>
+      </frame>
+      <frame id="3033:11513" name="Frame 1321315229" x="8" y="96.5" width="130" height="29.5">
+        <frame id="3033:11514" name="Frame 1321315216" x="4" y="-1.25" width="122" height="28">
+          <ellipse id="3033:11515" name="Ellipse 2513" x="34" y="9" width="10" height="10" />
+          <text id="3033:11516" name="蓝色" x="48" y="0" width="40" height="28" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="3033:11521" name="组" x="2899" y="1768" width="50.8347053527832" height="101.48057556152344" />
+  <frame id="3033:11527" name="组" x="3031" y="1533" width="50.8347053527832" height="101.48057556152344" />
+  <frame id="3033:11533" name="组" x="2795" y="1450" width="50.8347053527832" height="101.48057556152344" />
+  <frame id="3033:11539" name="组" x="3372.0244140625" y="1768" width="50.8347053527832" height="101.48057556152344" />
+  <frame id="3033:11545" name="组" x="3122" y="1771.23095703125" width="50.8347053527832" height="101.48057556152344" />
+  <frame id="3033:11551" name="组" x="3340" y="1567" width="50.8347053527832" height="101.48057556152344" />
+  <frame id="3033:11557" name="Frame" x="3886" y="1180" width="24" height="24" />
+  <frame id="3033:11561" name="Frame" x="3947" y="1182" width="22" height="22" />
+</frame>
+IMPORTANT: The design was too large to fit into context with get_design_context. Instead you have received a sparse metadata response, you MUST call get_design_context on the IDs of the sublayers to get the full code. Split up the calls to ensure the sublayers do not also exceed the context limit.
