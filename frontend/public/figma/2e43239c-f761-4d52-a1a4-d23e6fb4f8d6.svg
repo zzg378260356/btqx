@@ -1,0 +1,38 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="76" height="211" viewBox="0 0 76 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Rectangle 3712">
+<g filter="url(#filter0_i_0_168)">
+<path d="M0 0H76V200.257L76 211L2.60421e-07 180.257L0 0Z" fill="#3D73FF" fill-opacity="0.06"/>
+<path d="M0 0H76V200.257L76 211L2.60421e-07 180.257L0 0Z" fill="url(#paint0_radial_0_168)" fill-opacity="0.3"/>
+<path d="M0 0H76V200.257L76 211L2.60421e-07 180.257L0 0Z" fill="url(#paint1_linear_0_168)" fill-opacity="0.1"/>
+<path d="M0 0H76V200.257L76 211L2.60421e-07 180.257L0 0Z" fill="url(#paint2_radial_0_168)" fill-opacity="0.2"/>
+</g>
+<path d="M75.5 0.5V210.258L0.5 179.919V0.5H75.5Z" stroke="url(#paint3_linear_0_168)"/>
+</g>
+<defs>
+<filter id="filter0_i_0_168" x="0" y="0" width="76" height="211" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-14"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.22588 0 0 0 0 0.56552 0 0 0 0 0.968056 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_168"/>
+</filter>
+<radialGradient id="paint0_radial_0_168" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(36.1696) rotate(90) scale(213.086 33.0948)">
+<stop stop-color="#001F33"/>
+<stop offset="1" stop-color="#00101C"/>
+</radialGradient>
+<linearGradient id="paint1_linear_0_168" x1="38.0002" y1="0" x2="38.0002" y2="213.086" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00AAFF"/>
+<stop offset="1" stop-color="#008DFF" stop-opacity="0.5"/>
+</linearGradient>
+<radialGradient id="paint2_radial_0_168" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.5 3.2615) rotate(90) scale(209.825 77.8398)">
+<stop stop-color="#0075FF"/>
+<stop offset="1" stop-color="#05071D" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint3_linear_0_168" x1="-3.1e-06" y1="57.2874" x2="76" y2="57.2874" gradientUnits="userSpaceOnUse">
+<stop stop-color="#027FA2"/>
+<stop offset="1" stop-color="#008DFF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
