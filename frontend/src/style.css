@@ -165,7 +165,7 @@ td:first-child { border-left: 1px solid #00a0ec66; border-radius: 5px 0 0 5px; }
 .dashboard .overview-bottom-legend { left: calc(751px + var(--content-extra) * .3); }
 .dashboard .overview-fallback-metric.orange-metric { left: calc(617px + var(--content-extra) / 6) !important; }
 .dashboard .overview-fallback-metric:not(.orange-metric) { left: calc(967px + var(--content-extra) / 2) !important; }
-.dashboard .overview-fallback-metric:has(.lightning-symbol) { left: calc(1317px + var(--content-extra) * 5 / 6) !important; }
+.dashboard .overview-fallback-metric:has(.lightning-icon) { left: calc(1317px + var(--content-extra) * 5 / 6) !important; }
 
 /* Dialog titles occupy the full top edge, with a dedicated close-button area. */
 .header-actions .digital-human-button { width: 78px; height: 34px; padding: 0 12px; border: 1px solid #37b9eb; border-radius: 4px; color: #e6f8ff; background: #0a4369; font-size: 16px; cursor: pointer; }
@@ -177,3 +177,44 @@ td:first-child { border-left: 1px solid #00a0ec66; border-radius: 5px 0 0 5px; }
 .modal > .panel-heading h2 { left: 24px; right: 62px; top: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .modal > .close-button { top: 10px; right: 10px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 4px; }
 .modal > .close-button:hover { background: #45b8ee22; }
+
+/* Translucent panels keep the basemap visible while softening map detail. */
+:root { --panel-glass: linear-gradient(#062440a3,#041c3099); --panel-blur: blur(10px); }
+.dashboard .side-panel,
+.dashboard .overview-left-surface,.dashboard .overview-right-surface,
+.dashboard .overview-live-chart,.dashboard .tracking-panel,
+.dashboard .map-legend { background: var(--panel-glass); backdrop-filter: var(--panel-blur); -webkit-backdrop-filter: var(--panel-blur); border-color: #0084ff4d; }
+.dashboard .overview-native-plane [data-name="S-209"] { background-color: #041d3052 !important; backdrop-filter: none !important; }
+.dashboard .overview-metric-shade,.dashboard .metrics { background: linear-gradient(100deg,#246c924d,#123f5c33); backdrop-filter: blur(18px) saturate(125%); -webkit-backdrop-filter: blur(18px) saturate(125%); border-radius: 6px; }
+.dashboard .weather-card { background: #0a3a5777; }
+.dashboard .announcement { background: linear-gradient(90deg,#277fb66b,#164e7140); backdrop-filter: blur(18px) saturate(125%); -webkit-backdrop-filter: blur(18px) saturate(125%); }
+.dashboard .modal { background: #07253ef5; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+
+.fullscreen-button:before,.fullscreen-button:after { display: none; }
+.fullscreen-button img { display: block; width: 24px; height: 24px; object-fit: contain; }
+.hex-badge { background: transparent; clip-path: none; }
+.hex-badge:before,.hex-badge:after { display: none; }
+.hex-badge > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.notification-button > img { display: block; width: 24px; height: 24px; object-fit: contain; }
+.notification-button .notification-dot { width: 6px; height: 6px; right: 0; top: 0; border-radius: 50%; background: #ff414d; box-shadow: 0 0 5px #ff414d66; }
+
+/* Sample the map directly, outside the transformed dashboard. Foreground text
+   and charts are separate siblings and are never included in the blur. */
+.map-glass-layer { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+.map-glass-pane { position: absolute; background: var(--panel-glass); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 6px; }
+.glass-left,.glass-right { top: calc(164px * var(--ui-scale)); bottom: calc(16px * var(--ui-scale)); width: calc(386px * var(--ui-scale)); }
+.glass-left { left: calc(26px * var(--ui-scale)); }.glass-right { right: calc(16px * var(--ui-scale)); }
+.glass-metrics { left: calc(436px * var(--ui-scale)); right: calc(424px * var(--ui-scale)); top: calc(164px * var(--ui-scale)); height: calc(100px * var(--ui-scale)); background: linear-gradient(90deg,#05253c88,#062c4355,transparent); }
+.glass-announcement { left: calc(436px * var(--ui-scale)); right: calc(440px * var(--ui-scale)); top: calc(266px * var(--ui-scale)); height: calc(59px * var(--ui-scale)); background: linear-gradient(90deg,#1588d080,#1253824d 75%,transparent); }
+.glass-legend { right: calc(430px * var(--ui-scale)); top: calc(339px * var(--ui-scale)); width: calc(146px * var(--ui-scale)); height: calc(176px * var(--ui-scale)); background: #041c3bd4; }
+.warning-glass .glass-legend { top: calc(298px * var(--ui-scale)); }
+.glass-charts { position: absolute; left: calc(440px * var(--ui-scale)); right: calc(430px * var(--ui-scale)); top: calc(823px * var(--ui-scale)); height: calc(241px * var(--ui-scale)); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: calc(16px * var(--ui-scale)); }
+.glass-charts > .map-glass-pane { position: relative; min-width: 0; }
+.warning-glass .glass-left { width: calc(373px * var(--ui-scale)); }.warning-glass .glass-right { width: calc(400px * var(--ui-scale)); }
+.warning-glass .glass-metrics { left: calc(418px * var(--ui-scale)); right: calc(430px * var(--ui-scale)); top: calc(173px * var(--ui-scale)); height: calc(94px * var(--ui-scale)); background: transparent; }
+.glass-tracking { left: calc(408px * var(--ui-scale)); right: calc(421px * var(--ui-scale)); top: calc(794px * var(--ui-scale)); height: calc(270px * var(--ui-scale)); background: linear-gradient(#2c84d03b,#0827425c); }
+.dashboard { z-index: 2; }
+.dashboard .side-panel,.dashboard .overview-left-surface,.dashboard .overview-right-surface,
+.dashboard .overview-live-chart,.dashboard .tracking-panel,.dashboard .overview-metric-shade,
+.dashboard .metrics,.dashboard .announcement,.dashboard .map-legend { background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: none; }
+.dashboard .map-legend { border-color: #1782d8; }

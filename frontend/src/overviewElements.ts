@@ -8,6 +8,7 @@ export interface OverviewElementsData {
   warningTypes: WarningType[];
   weather: WeatherReading[];
   windDirection: string;
+  windDirectionDegrees?: number;
   broadcasts: string[];
 }
 // Replace these records with API results; all labels, charts and details derive from them.
@@ -27,6 +28,7 @@ export const mockOverviewElements: OverviewElementsData = {
     temperature: [6.2, 7.4, 9.1, 11.3, 13.2, 14.6, 15.1, 14.8][i]!,
   })),
   windDirection: '东南风',
+  windDirectionDegrees: 135,
   broadcasts: [
     '【演示】包头市气象台发布暴雨橙色预警：东河区未来3小时局地降水较强，请注意山洪及地质灾害风险。',
     '【演示】青山区发布雷电蓝色预警：未来6小时可能发生雷电活动，请减少户外作业。',

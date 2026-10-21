@@ -26,12 +26,27 @@ class HazardPointResource extends Resource
 
     public static function canViewAny(): bool
     {
-        return auth()->user()?->hasPermission('devices.view') ?? false;
+        return auth()->user()?->hasPermission('hazards.view') ?? false;
     }
 
     public static function canCreate(): bool
     {
-        return auth()->user()?->hasPermission('devices.manage') ?? false;
+        return auth()->user()?->hasPermission('hazards.create') ?? false;
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()?->hasPermission('hazards.update') ?? false;
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()?->hasPermission('hazards.delete') ?? false;
+    }
+
+    public static function canDeleteAny(): bool
+    {
+        return auth()->user()?->hasPermission('hazards.delete') ?? false;
     }
 
     public static function form(Schema $schema): Schema

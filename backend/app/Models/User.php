@@ -9,6 +9,7 @@ use Filament\Panel;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -18,7 +19,7 @@ class User extends Authenticatable implements FilamentUser
 {
     public function canAccessPanel(Panel $panel): bool
     {
-        return $this->role !== 'disabled';
+        return $this->isSuperAdmin() || ($this->role !== 'disabled' && $this->assignedRole()->exists());
     }
 
     /** @use HasFactory<UserFactory> */
@@ -46,6 +47,11 @@ class User extends Authenticatable implements FilamentUser
 
     public function hasPermission(string $permission): bool
     {
-        return $this->isSuperAdmin() || in_array($permission, config("permissions.roles.{$this->role}", []), true);
+        return $this->isSuperAdmin() || in_array($permission, $this->assignedRole?->permissions ?? [], true);
+    }
+
+    public function assignedRole(): BelongsTo
+    {
+        return $this->belongsTo(Role::class, 'role', 'slug');
     }
 }

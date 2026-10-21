@@ -36,5 +36,4 @@ const dots: Record<string, string> = {
 .legend-icon { position: absolute; left: 1.54px; top: 8.6px; }
 .legend-items { height: 134px; padding: 8px; background: radial-gradient(ellipse at bottom left, #3b8dff40, #1d56c21f 50%, transparent), #10121bcc; }
 .legend-items button { display: flex; align-items: center; justify-content: center; gap: 4px; height: 29.5px; margin: 0; font-size: 20px; padding-bottom: 4px; }
-.legend-items button:nth-child(-n+2) { border-bottom: 1px solid #b5caff; }
 </style>

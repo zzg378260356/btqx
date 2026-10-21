@@ -26,12 +26,27 @@ class NotificationPolicyResource extends Resource
 
     public static function canViewAny(): bool
     {
-        return auth()->user()?->hasPermission('system.manage') ?? false;
+        return auth()->user()?->hasPermission('policies.view') ?? false;
     }
 
     public static function canCreate(): bool
     {
-        return auth()->user()?->hasPermission('system.manage') ?? false;
+        return auth()->user()?->hasPermission('policies.create') ?? false;
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()?->hasPermission('policies.update') ?? false;
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()?->hasPermission('policies.delete') ?? false;
+    }
+
+    public static function canDeleteAny(): bool
+    {
+        return auth()->user()?->hasPermission('policies.delete') ?? false;
     }
 
     public static function form(Schema $schema): Schema

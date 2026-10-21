@@ -6,6 +6,7 @@ import DesignAsset from "./components/DesignAsset.vue";
 import PanelHeading from "./components/PanelHeading.vue";
 import MetricCard from "./components/MetricCard.vue";
 import MapLegend from "./components/MapLegend.vue";
+import { icons } from './icons';
 import OverviewScreen from "./components/OverviewScreen.vue";
 import { designData, designTracking, type DashboardData, type Warning } from "./designData";
 const Scene = defineAsyncComponent(() => import("./components/Scene.vue"));
@@ -14,6 +15,8 @@ const digitalHumanOpen = ref(false);
 const b = "/figma/";
 const mode = ref<"design" | "live">("design");
 const live = ref<DashboardData | null>(null);
+const notificationWarnings = computed(() => live.value?.warnings.filter(w => w.status !== '已完成') ?? []);
+const notificationsOpen = ref(false);
 const emptyData: DashboardData = { counts: { red: 0, orange: 0, yellow: 0, blue: 0 }, devices: { total: 0, online: 0 }, warnings: [], trend: { dates: [], series: {} }, types: [] };
 const data = computed(() => mode.value === "design" ? designData : live.value || emptyData);
 const colors: Record<string, string> = { red: "#ff004c", orange: "#ff9f0a", yellow: "#f1ff00", blue: "#00baff" };
@@ -88,7 +91,7 @@ async function toggleFullscreen() {
   if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen();
 }
 function fullscreenChanged() { full.value = !!document.fullscreenElement; fit(); }
-function onKey(event: KeyboardEvent) { if (event.key === "Escape") { selected.value = null; station.value = ""; overview.value = false; } }
+function onKey(event: KeyboardEvent) { if (event.key === "Escape") { selected.value = null; station.value = ""; overview.value = false; notificationsOpen.value = false; } }
 onMounted(() => {
   fit(); load(); window.addEventListener("resize", fit); window.addEventListener("keydown", onKey); window.addEventListener("hashchange", syncPage); document.addEventListener("fullscreenchange", fullscreenChanged);
   timer = setInterval(() => { clock.value = new Date(); }, 1000); poll = setInterval(load, 30000);
@@ -99,6 +102,13 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
   <DigitalHuman v-if="digitalHumanOpen" @close="digitalHumanOpen = false" />
   <div class="viewport">
     <Scene v-show="active !== '监测设备中心'" @stats="mapStats = $event" />
+    <div v-if="active === '综合态势' || active === '预警中心'" :class="['map-glass-layer', { 'warning-glass': active === '预警中心' }]" :style="{ '--ui-scale': scale }" aria-hidden="true">
+      <div class="map-glass-pane glass-left"></div><div class="map-glass-pane glass-right"></div>
+      <div class="map-glass-pane glass-metrics"></div>
+      <div class="map-glass-pane glass-legend"></div>
+      <template v-if="active === '综合态势'"><div class="map-glass-pane glass-announcement"></div><div class="glass-charts"><div class="map-glass-pane"></div><div class="map-glass-pane"></div></div></template>
+      <div v-else class="map-glass-pane glass-tracking"></div>
+    </div>
     <div class="dashboard" :style="{ width: layoutWidth + 'px', transform: 'scale(' + scale + ')', '--content-extra': (layoutWidth - 1920) + 'px' }">
       <header class="topbar">
         <div class="weather">
@@ -110,8 +120,8 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
         <div class="title-frame"></div><h1>包头市重点区域气象灾害监测预警平台</h1>
         <div class="header-actions">
           <button class="digital-human-button" aria-haspopup="dialog" @click="digitalHumanOpen = true">数字人</button>
-          <button class="notification-button" title="查看预警信息" @click="overview = true"><span class="bell"></span><i></i></button>
-          <button class="fullscreen-button" :title="full ? '退出全屏' : '全屏显示'" @click="toggleFullscreen"><span></span></button>
+          <button class="notification-button" :title="notificationWarnings.length ? '查看预警信息（有待处理预警）' : '查看预警信息'" :aria-label="notificationWarnings.length ? '通知：有待处理预警' : '通知：暂无待处理预警'" @click="notificationsOpen = true; overview = false; selected = null"><img :src="icons.notification" alt="" /><i v-if="notificationWarnings.length" class="notification-dot" aria-hidden="true"></i></button>
+          <button class="fullscreen-button" :title="full ? '退出全屏' : '全屏显示'" @click="toggleFullscreen"><img :src="icons.fullscreen" alt="" /></button>
           <a class="admin-link" href="/admin" target="_blank" rel="noopener"><img :src="b + '966bd149-7415-4ebd-ae96-59aeb9c9b7e0.png'" alt="" />管理员<DesignAsset :src="b + '01eed408-0692-4304-9454-deb7d058440d.svg'" :width="16" :height="16" /></a>
         </div>
         <img class="top-line" :src="b + '0df04644-ca3d-41cf-a557-fcabad58268d.png'" alt="" />
@@ -135,7 +145,7 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
           <PanelHeading title="预警统计" more @more="overview = true" />
           <div class="warning-counts">
             <button v-for="key in keys" :key="key" :style="{ '--level-color': colors[key] }" :class="{ chosen: level === key }" @click="level = level === key ? '' : key" :aria-label="'筛选' + names[key] + '预警'">
-              <span class="hex-badge"><span class="siren"><i></i></span></span>
+              <span class="hex-badge"><img :src="icons.hexagon" alt="" /><span class="siren"><i></i></span></span>
               <strong>{{ data.counts[key] }}<small>条</small></strong><span>{{ names[key] }}预警</span><span>较昨日</span><em>+4</em>
             </button>
           </div>
@@ -185,6 +195,12 @@ onBeforeUnmount(() => { clearInterval(timer); clearInterval(poll); window.remove
       </aside>
       </template>
       <div v-if="active === '预警中心'" class="mode-control"><button @click="setMode">{{ mode === 'design' ? '设计对照' : '实时数据' }} ⌄</button><span v-if="mode === 'live' && error">{{ error }}</span><span v-else-if="mode === 'live'">每30秒更新</span></div>
+      <div v-if="notificationsOpen" class="modal-backdrop" @click.self="notificationsOpen = false">
+        <section class="modal" role="dialog" aria-modal="true" aria-label="通知预警"><button class="close-button" aria-label="关闭" @click="notificationsOpen = false">×</button><PanelHeading title="通知预警" :width="580" />
+          <p v-if="error">{{ error }}</p><p v-else-if="!live">正在加载预警信息…</p><p v-else-if="!notificationWarnings.length">暂无待处理预警</p>
+          <div class="overview-list"><button v-for="w in notificationWarnings" :key="w.id" @click="selected = w; notificationsOpen = false"><span :style="{ color: colors[w.level] }">{{ names[w.level] }}</span>　{{ w.title }}<small>{{ w.published_at }}</small></button></div>
+        </section>
+      </div>
       <div v-if="selected || overview" class="modal-backdrop" @click.self="selected = null; overview = false">
         <section class="modal" role="dialog" aria-modal="true" :aria-label="selected ? '预警详情' : '预警中心'"><button class="close-button" @click="selected = null; overview = false" aria-label="关闭">×</button><PanelHeading :title="selected ? '预警详情' : '预警中心'" :width="580" />
           <template v-if="selected"><h3>{{ selected.title }}</h3><p :style="{ color: colors[selected.level] }">{{ names[selected.level] }}预警 · {{ selected.status }}</p><p>影响区域：{{ selected.district }}</p><p>发布时间：{{ selected.published_at }}</p><p>责任单位：{{ selected.responsible_unit }}</p></template>

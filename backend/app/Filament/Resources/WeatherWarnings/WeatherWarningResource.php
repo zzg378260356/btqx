@@ -33,7 +33,22 @@ class WeatherWarningResource extends Resource
 
     public static function canCreate(): bool
     {
-        return auth()->user()?->hasPermission('warnings.manage') ?? false;
+        return auth()->user()?->hasPermission('warnings.create') ?? false;
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()?->hasPermission('warnings.update') ?? false;
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()?->hasPermission('warnings.delete') ?? false;
+    }
+
+    public static function canDeleteAny(): bool
+    {
+        return auth()->user()?->hasPermission('warnings.delete') ?? false;
     }
 
     public static function form(Schema $schema): Schema

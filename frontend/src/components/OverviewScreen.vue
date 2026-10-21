@@ -9,6 +9,7 @@ import DesignAsset from "./DesignAsset.vue";
 import PanelHeading from "./PanelHeading.vue";
 import MapLegend from "./MapLegend.vue";
 import Chart from "./Chart.vue";
+import { icons } from '../icons';
 const emit = defineEmits<{ warnings: [] }>();
 const props = withDefaults(defineProps<{ deviceOnlineRate?: number; chartData?: OverviewChartData; elementsData?: OverviewElementsData }>(), { deviceOnlineRate: 0 });
 const design = cachedDesign as unknown as Record<string, DesignNode>;
@@ -19,10 +20,10 @@ const elements = computed(() => props.elementsData ?? mockOverviewElements);
 const warningTypeTotal = computed(() => elements.value.warningTypes.reduce((sum, item) => sum + item.count, 0));
 const broadcastText = computed(() => elements.value.broadcasts.join('　　｜　　'));
 const events = [
-  { name: "橙色暴雨预警-东河区", time: "07-04 20:15", level: "orange", mark: "◉" },
-  { name: "雷电蓝色预警-青山区", time: "07-04 20:15", level: "blue", mark: "ϟ" },
-  { name: "大风蓝色预警-昆都仑区", time: "07-04 20:15", level: "blue", mark: "≋" },
-  { name: "冰雹橙色预警-石拐区", time: "07-04 20:15", level: "orange", mark: "☁" },
+  { name: "橙色暴雨预警-东河区", time: "07-04 20:15", level: "orange", icon: icons.rain },
+  { name: "雷电蓝色预警-青山区", time: "07-04 20:15", level: "blue", icon: icons.thunder },
+  { name: "大风蓝色预警-昆都仑区", time: "07-04 20:15", level: "blue", icon: icons.wind },
+  { name: "冰雹橙色预警-石拐区", time: "07-04 20:15", level: "orange", icon: icons.hail },
 ];
 const shownEvents = computed(() => riskFilter.value ? events.filter(e => e.level === riskFilter.value) : events);
 const resources = [{ value: "532", unit: "人", label: "应急人员" }, { value: "65", unit: "辆", label: "救援车辆" }, { value: "94", unit: "套", label: "物资装备" }, { value: "125", unit: "处", label: "避灾场所" }];
@@ -64,16 +65,16 @@ onBeforeUnmount(() => { window.removeEventListener("keydown", close); chartPanel
       <NativeDesign :tree="design.blueMetric" fluid />
       <NativeDesign :tree="design.rainMetric" fluid />
       <div class="overview-fallback-metric orange-metric" style="left:617px;top:83px">
-        <DesignAsset src="/figma/overview/66833337-4ae5-4c33-b5b9-370ca93316a9-03e85.png" :width="69" :height="76" />
-        <span class="metric-face" style="--level-color:#ffbc62"><span class="siren"><i></i></span></span><div><span>橙色预警</span><strong>2<small>处</small></strong></div>
+        <DesignAsset :src="icons.hexagon" :width="69" :height="76" />
+        <img class="metric-icon" :src="icons.orangeWarning" alt="" /><div><span>橙色预警</span><strong>2<small>处</small></strong></div>
       </div>
       <div class="overview-fallback-metric" style="left:967px;top:88px">
-        <DesignAsset src="/figma/overview/66833337-4ae5-4c33-b5b9-370ca93316a9-03e85.png" :width="69" :height="76" />
-        <span class="metric-face"><span class="equipment-symbol"><i></i></span></span><div><span>设备在线率</span><strong>{{ deviceOnlineRate }}<small>%</small></strong></div>
+        <DesignAsset :src="icons.hexagon" :width="69" :height="76" />
+        <img class="metric-icon" :src="icons.deviceOnline" alt="" /><div><span>设备在线率</span><strong>{{ deviceOnlineRate }}<small>%</small></strong></div>
       </div>
       <div class="overview-fallback-metric" style="left:1317px;top:83px">
-        <DesignAsset src="/figma/overview/66833337-4ae5-4c33-b5b9-370ca93316a9-03e85.png" :width="69" :height="76" />
-        <span class="metric-face"><b class="lightning-symbol">ϟ</b></span><div><span>雷暴热点</span><strong>18<small>处</small></strong></div>
+        <DesignAsset :src="icons.hexagon" :width="69" :height="76" />
+        <img class="lightning-icon" :src="icons.lightning" alt="" /><div><span>雷暴热点</span><strong>18<small>处</small></strong></div>
       </div>
       <section class="announcement" aria-label="实时预警信息滚动播报">
         <svg class="speaker-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z" fill="currentColor" stroke="none"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg>
@@ -85,7 +86,7 @@ onBeforeUnmount(() => { window.removeEventListener("keydown", close); chartPanel
         <button @click="emit('warnings')">查看详情 &gt;</button>
       </section>
       <div class="overview-events">
-        <button v-for="e in shownEvents" :key="e.name" :aria-label="e.name" :class="{ 'native-event-button': e === events[0] }" @click="modal = e.name"><span :class="['event-symbol', e.level]">{{ e.mark }}</span><span>{{ e.name }}</span><time>{{ e.time }}</time></button>
+        <button v-for="e in shownEvents" :key="e.name" :aria-label="e.name" @click="modal = e.name"><img class="event-icon" :src="e.icon" alt="" /><span>{{ e.name }}</span><time>{{ e.time }}</time></button>
         <p v-if="!shownEvents.length" class="empty">暂无该等级预警事件</p>
       </div>
       <div class="overview-resources"><button v-for="r in resources" :key="r.label" @click="modal = r.label"><strong>{{ r.value }}<small>{{ r.unit }}</small></strong><span>{{ r.label }}</span></button></div>
@@ -136,8 +137,9 @@ onBeforeUnmount(() => { window.removeEventListener("keydown", close); chartPanel
 .overview-events { position: absolute; left: 1530px; top: 396px; width: 362px; display: flex; flex-direction: column; gap: 8px; }
 .overview-events button { display: flex; align-items: center; gap: 10px; padding: 0 10px; width: 362px; height: 40px; border-bottom: 1px solid #1782d866; border-right: 1px solid #1782d866; border-radius: 4px; background: linear-gradient(90deg,#0f364e26,#0d436626); font-size: 14px; }
 .overview-events time { margin-left: auto; }.event-symbol { display: grid; place-items: center; width: 22px; height: 22px; border: 1px solid; border-radius: 50%; font-size: 20px; }.event-symbol.orange { color: #ffab60; }.event-symbol.blue { color: #8ed6ff; }
-.overview-events .native-event-button { opacity: 0; }
-.hide-native-event [data-node-id="3035:12379"] { visibility: hidden; }
+.overview-native-plane [data-node-id="3035:12379"] { visibility: hidden; }
+.overview-events .event-icon { width: 27px; height: 28px; object-fit: contain; flex-shrink: 0; }
+.metric-icon,.lightning-icon { position: absolute; left: 9px; top: 12px; width: 51px; height: 53px; object-fit: contain; }
 .overview-resources { position: absolute; left: 1534px; top: 653px; display: flex; gap: 0; }.overview-resources button { width: 88px; height: 65px; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding-left: 12px; text-align: left; background: linear-gradient(110deg,#15588799,#0b315166); border: 1px solid #087aa9; border-radius: 12px 10px 10px 12px; }.overview-resources button strong { font-size: 20px; color: #c7e6ff; }.overview-resources button strong small { font-size: 12px; font-weight: 400; }.overview-resources button > span { font-size: 14px; color: white; }
 .overview-observation-heading { position: absolute; left: 1527px; top: 733px; }.overview-observations { position: absolute; left: 1540px; top: 777px; width: 335px; height: 158.794px; }.overview-observation-footer { position: absolute; left: 1540px; top: 917px; width: 335px; display: flex; height: 34px; justify-content: space-between; align-items: center; }.overview-observation-footer small { font-size: 12px; }.overview-observation-footer button { width: 113px; height: 34px; border: 1px solid #0084ff4d; background: #0c3c5a99; border-radius: 3px; font-size: 14px; color: #fff; }
 .overview-bottom-legend { position: absolute; left: 751px; top: 781px; height: 15px; display: flex; gap: 14px; font-size: 12px; line-height: 15px; }.overview-bottom-legend span { display: flex; align-items: center; gap: 4px; color: #cfe3ec; }.overview-bottom-legend i { display: inline-block; width: 20px; height: 3px; background: #339cf3; border-radius: 2px; }.overview-bottom-legend span:last-child i { background: #00b9b7; }

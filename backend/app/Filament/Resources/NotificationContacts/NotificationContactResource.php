@@ -26,12 +26,27 @@ class NotificationContactResource extends Resource
 
     public static function canViewAny(): bool
     {
-        return auth()->user()?->hasPermission('warnings.view') ?? false;
+        return auth()->user()?->hasPermission('contacts.view') ?? false;
     }
 
     public static function canCreate(): bool
     {
-        return auth()->user()?->hasPermission('warnings.manage') ?? false;
+        return auth()->user()?->hasPermission('contacts.create') ?? false;
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()?->hasPermission('contacts.update') ?? false;
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()?->hasPermission('contacts.delete') ?? false;
+    }
+
+    public static function canDeleteAny(): bool
+    {
+        return auth()->user()?->hasPermission('contacts.delete') ?? false;
     }
 
     public static function form(Schema $schema): Schema

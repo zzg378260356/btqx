@@ -1,5 +1,6 @@
 import { defineComponent, h, type PropType, type VNode, type CSSProperties } from "vue";
 import FigmaImage from "./FigmaImage.vue";
+import { designImageOverrides } from '../icons';
 export interface DesignNode { tag: string; props: Record<string, unknown> & { style?: CSSProperties }; children: (DesignNode | string | number)[]; }
 // Only coordinates whose containing block is the full design plane need remapping.
 // Nested component geometry remains local, preserving the cached Figma assets.
@@ -35,7 +36,7 @@ function draw(node: DesignNode | string | number, global = true): VNode | string
   if (typeof node !== "object") return node;
   const style = node.props.style;
   const props = { ...node.props, ...(global && style ? { style: fluidStyle(style) } : {}) };
-  if (node.tag === "img") return h(FigmaImage, { ...props, src: String(node.props.src), alt: String(node.props.alt || "") });
+  if (node.tag === "img") return h(FigmaImage, { ...props, src: designImageOverrides[String(node.props.src)] ?? String(node.props.src), alt: String(node.props.alt || "") });
   return h(node.tag, props, node.children.map(child => draw(child, global && (!style || style.display === 'contents'))));
 }
 export default defineComponent({

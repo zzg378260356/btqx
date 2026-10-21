@@ -26,7 +26,7 @@ class UserResource extends Resource
 
     public static function canViewAny(): bool
     {
-        return auth()->user()?->hasPermission('users.manage') ?? false;
+        return auth()->user()?->hasPermission('users.view') ?? false;
     }
 
     public static function canCreate(): bool
@@ -42,6 +42,11 @@ class UserResource extends Resource
     public static function canDelete($record): bool
     {
         return (auth()->user()?->isSuperAdmin() ?? false) && $record->id !== auth()->id();
+    }
+
+    public static function canDeleteAny(): bool
+    {
+        return false;
     }
 
     public static function form(Schema $schema): Schema

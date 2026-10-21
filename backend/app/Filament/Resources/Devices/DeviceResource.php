@@ -33,7 +33,22 @@ class DeviceResource extends Resource
 
     public static function canCreate(): bool
     {
-        return auth()->user()?->hasPermission('devices.manage') ?? false;
+        return auth()->user()?->hasPermission('devices.create') ?? false;
+    }
+
+    public static function canEdit($record): bool
+    {
+        return auth()->user()?->hasPermission('devices.update') ?? false;
+    }
+
+    public static function canDelete($record): bool
+    {
+        return auth()->user()?->hasPermission('devices.delete') ?? false;
+    }
+
+    public static function canDeleteAny(): bool
+    {
+        return auth()->user()?->hasPermission('devices.delete') ?? false;
     }
 
     public static function form(Schema $schema): Schema
